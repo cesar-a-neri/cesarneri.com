@@ -6,7 +6,7 @@ font-weight: Normal;
 
 @font-face {
 font-family: 'FaktPro Semibold';
-src: url('../assets/fonts/FaktPro-Semibold.ttf') format('truetype');
+src: url('../assets/fonts/FaktPro-SemiBold.ttf') format('truetype');
 font-weight: Semibold;
 }
 
@@ -516,7 +516,7 @@ header {
 @media all and (max-width:480px) {
 
   body{
-    margin: 35px 30px;
+    margin: 35px 25px;
   }
 
   h1{

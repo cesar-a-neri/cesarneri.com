@@ -263,7 +263,7 @@ width: 60vw;
   }
 
   .date{
-    width: 33vw;
+    width: 35vw;
   }
 
 
@@ -276,6 +276,8 @@ width: 60vw;
     width: auto;
     text-align: right;
     margin-left: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .spacer{

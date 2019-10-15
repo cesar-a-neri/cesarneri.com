@@ -477,7 +477,7 @@ header {
 }
 @media all and (max-width: 480px) {
   body {
-    margin: 35px 30px;
+    margin: 35px 25px;
   }
 
   h1 {
