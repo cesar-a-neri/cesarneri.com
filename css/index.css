@@ -1,0 +1,875 @@
+@font-face {
+  font-family: "FaktPro Normal";
+  src: url("../assets/fonts/FaktPro-Normal.ttf") format("truetype");
+  font-weight: Normal;
+}
+@font-face {
+  font-family: "FaktPro Semibold";
+  src: url("../assets/fonts/FaktPro-Semibold.ttf") format("truetype");
+  font-weight: Semibold;
+}
+html {
+  background-color: #212121;
+  scroll-behavior: smooth;
+  box-sizing: inherit;
+  cursor: none;
+}
+
+body {
+  color: #F7F7F7;
+  margin: 65px 15vh;
+}
+
+h1 {
+  font-family: "FaktPro Semibold";
+  font-size: 43px;
+  letter-spacing: 0px;
+  line-height: 50px;
+}
+
+h2 {
+  font-family: "FaktPro Semibold";
+  font-size: 32px;
+  letter-spacing: 0px;
+  line-height: 40px;
+}
+
+.subheader {
+  font-family: "FaktPro Normal";
+  font-size: 27px;
+  letter-spacing: 0px;
+}
+
+.bold {
+  font-family: "FaktPro Semibold";
+}
+
+p {
+  font-family: "FaktPro Normal";
+  font-size: 18px;
+  line-height: 38px;
+  color: #F7F7F7;
+}
+
+.pUnderline {
+  text-decoration: underline;
+}
+
+.faded {
+  opacity: 0.5;
+}
+
+a {
+  color: #F7F7F7;
+  cursor: none;
+  text-decoration: none;
+}
+
+.underline {
+  border-bottom: 2px solid #F7F7F7;
+}
+
+.nav {
+  font-family: "FaktPro Normal";
+  font-size: 20px;
+  letter-spacing: 0px;
+  opacity: 0;
+  z-index: 100;
+  animation: riseFade 0.4s forwards;
+  animation-timing-function: ease-in;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+ul {
+  display: inline;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+  display: block;
+  text-align: right;
+  padding-top: 0px;
+  padding-left: 120px;
+}
+
+svg {
+  stroke: #F7F7F7;
+}
+
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.cursor--small {
+  width: 12px;
+  height: 12px;
+  left: -6px;
+  top: -6px;
+  border-radius: 50%;
+  z-index: 11000;
+  background: #F7F7F7;
+}
+
+.cursor--canvas {
+  width: 100vw;
+  height: 100vh;
+  z-index: 12000;
+}
+
+a.ulink, a.ulink:visited {
+  text-decoration: none;
+  position: relative;
+}
+
+a.ulink:after, a.ulink:visited:after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  background: #F7F7F7;
+  transition: 0.3s;
+}
+
+a.ulink:hover:after, a.ulink:visited:hover:after {
+  width: 100%;
+}
+
+a.ulink.block, a.ulink:visited.block {
+  display: block;
+  padding: 0.5em;
+}
+
+.tilt {
+  transform-style: preserve-3d;
+  margin-top: 200px;
+  margin-bottom: -10px;
+  margin-left: 0px;
+  background: none;
+}
+
+.tilt > img {
+  box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.tilt > img:hover {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.tileTitle {
+  font-family: "FaktPro Semibold";
+  font-size: 32px;
+  letter-spacing: 0px;
+  line-height: 50px;
+  position: absolute;
+  top: calc(100% + 50px);
+  left: 0px;
+}
+
+.viewProject {
+  font-family: "FaktPro Normal";
+  opacity: 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 75px;
+  position: absolute;
+  top: calc(100% + 40px);
+  right: 0px;
+  animation: leftToRightFade 0.4s forwards;
+  animation-timing-function: ease-in;
+}
+
+.viewProject2 {
+  font-family: "FaktPro Normal";
+  opacity: 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 50px;
+  left: 0px;
+  animation: leftToRightFade 0.4s forwards;
+  animation-timing-function: ease-in;
+}
+
+.tilt:hover .viewProject {
+  animation: leftToRight 0.4s forwards;
+  animation-timing-function: ease-in;
+}
+
+.tilt:hover .viewProject2 {
+  animation: leftToRight 0.4s forwards;
+  animation-timing-function: ease-in;
+}
+
+.tilt:hover .viewProject3 {
+  animation: leftToRight 0.4s forwards;
+  animation-timing-function: ease-in;
+}
+
+.bodyExit {
+  animation: riseFadeExit 0.5s forwards;
+  animation-delay: 0.2s;
+  animation-timing-function: ease-out;
+}
+
+.tileSubtitle {
+  font-family: "FaktPro Semibold";
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  line-height: 70px;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+}
+
+.tileInfoLeft {
+  position: fixed;
+  font-family: "FaktPro Semibold";
+  font-size: 15px;
+  left: calc(100% + 33px);
+  bottom: 10px;
+  white-space: nowrap;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+}
+
+.tileInfoRight {
+  opacity: 0.5;
+  position: fixed;
+  font-family: "FaktPro Normal";
+  font-size: 15px;
+  right: -15px;
+  top: 5px;
+  white-space: nowrap;
+  transform: rotate(-90deg);
+  transform-origin: top right;
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+}
+
+.page-scroll-indicator {
+  width: 5px;
+  height: 100vh;
+  background: #212121;
+}
+
+.progress {
+  width: 5px;
+  height: 0vh;
+  background: #F7F7F7;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+.infoContent {
+  display: flex;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.pictureInfo > img {
+  width: 30vw;
+}
+
+.infoText {
+  padding-left: 100px;
+}
+
+#tile1 {
+  width: 60vw;
+}
+
+#tile2 {
+  position: relative;
+  width: 40vw;
+  left: 45%;
+}
+
+#tile3 {
+  width: 40vw;
+}
+
+#tile4 {
+  position: relative;
+  width: 20vw;
+  left: 70%;
+  bottom: 380px;
+}
+
+#tile5 {
+  position: relative;
+  width: 40vw;
+  left: 25%;
+  bottom: 370px;
+}
+
+#tile6 {
+  position: relative;
+  width: 60vw;
+  bottom: 370px;
+}
+
+#tile7 {
+  position: relative;
+  width: 30vw;
+  left: 57%;
+  bottom: 370px;
+}
+
+#tile8 {
+  position: relative;
+  width: 20vw;
+  bottom: 770px;
+  margin-bottom: -370px;
+}
+
+#nameLogo {
+  font-family: "FaktPro Semibold";
+}
+
+#introContainer {
+  padding-top: 17vh;
+}
+
+#introHeader {
+  opacity: 0;
+  padding-right: 20px;
+  animation: leftToRight 0.8s forwards;
+}
+
+#helloLine {
+  transform-origin: left;
+  transform: scale(0, 1);
+  animation: growRight 0.4s forwards;
+}
+
+#intro {
+  width: 70%;
+  padding-top: 6vh;
+  opacity: 0;
+  animation: leftToRight 0.4s forwards;
+  animation-timing-function: ease-in;
+}
+
+#introEmail {
+  display: block;
+  padding-top: 8vh;
+  text-align: right;
+  right: 0px;
+  opacity: 0;
+  animation: leftToRight 0.4s forwards;
+  animation-timing-function: ease-in;
+}
+
+#verticalScrollLine {
+  display: block;
+  margin-left: auto;
+  margin-top: 10vh;
+  transform-origin: top;
+  transform: scale(0, 1);
+  animation: growDown 2s forwards;
+}
+
+#workHeader {
+  padding-top: 60px;
+  padding-right: 20px;
+}
+
+#infoHeader {
+  padding-top: 60px;
+  padding-right: 20px;
+}
+
+@keyframes leftToRight {
+  from {
+    transform: translateX(-15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes leftToRightFade {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-15px);
+    opacity: 0;
+  }
+}
+@keyframes riseFade {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes riseFadeExit {
+  from {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+@keyframes growRight {
+  from {
+    transform: scale(0, 1);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+@keyframes growDown {
+  from {
+    transform: scale(1, 0);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+@media all and (max-width: 480px) {
+  body {
+    margin: 35px 30px;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .subheader {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .nav {
+    font-size: 16px;
+  }
+
+  li {
+    padding-left: 60px;
+  }
+
+  .tilt {
+    margin-top: 150px;
+    margin-bottom: -10px;
+  }
+
+  .tileTitle {
+    font-size: 20px;
+    line-height: 22px;
+    top: calc(100% + 30px);
+  }
+
+  .tileSubtitle {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+  }
+
+  .tileInfoLeft {
+    display: none;
+  }
+
+  .tileInfoRight {
+    display: none;
+  }
+
+  .viewProject {
+    display: none;
+  }
+
+  .viewProject2 {
+    display: none;
+  }
+
+  .infoContent {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .pictureInfo {
+    padding-bottom: 25px;
+    text-align: center;
+  }
+
+  .pictureInfo > img {
+    width: 70vw;
+  }
+
+  .infoText {
+    padding-left: 0px;
+  }
+
+  #intro {
+    width: 100%;
+  }
+
+  #tile1 {
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  #tile2 {
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  #tile3 {
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  #tile4 {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  #tile5 {
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  #tile6 {
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  #tile7 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  #tile8 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 200px;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .pictureInfo {
+    width: 100%;
+  }
+}
+@media all and (max-width: 600px) and (min-width: 481px) {
+  body {
+    margin: 35px 40px;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .subheader {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .nav {
+    font-size: 16px;
+  }
+
+  li {
+    padding-left: 60px;
+  }
+
+  .tileTitle {
+    font-size: 20px;
+    line-height: 22px;
+    top: calc(100% + 30px);
+  }
+
+  .tileSubtitle {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+  }
+
+  .tileInfoLeft {
+    display: none;
+  }
+
+  .tileInfoRight {
+    display: none;
+  }
+
+  .viewProject {
+    display: none;
+  }
+
+  .viewProject2 {
+    display: none;
+  }
+
+  .infoContent {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .pictureInfo {
+    padding-bottom: 25px;
+    text-align: center;
+  }
+
+  .pictureInfo > img {
+    width: 50vw;
+  }
+
+  .infoText {
+    padding-left: 0px;
+  }
+}
+@media all and (max-width: 768px) and (min-width: 601px) {
+  body {
+    margin: 45px 60px;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 34px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .subheader {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .nav {
+    font-size: 20px;
+  }
+
+  li {
+    padding-left: 100px;
+  }
+
+  .tileTitle {
+    font-size: 20px;
+    line-height: 22px;
+    top: calc(100% + 30px);
+  }
+
+  .tileSubtitle {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+  }
+
+  .tileInfoLeft {
+    display: none;
+  }
+
+  .tileInfoRight {
+    display: none;
+  }
+
+  .viewProject {
+    display: none;
+  }
+
+  .viewProject2 {
+    display: none;
+  }
+
+  .infoContent {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .pictureInfo {
+    padding-bottom: 70px;
+    text-align: center;
+  }
+
+  .pictureInfo > img {
+    width: 50vw;
+  }
+
+  .infoText {
+    padding-left: 0px;
+  }
+
+  #tile8 {
+    margin-bottom: -470px;
+  }
+
+  #introContainer {
+    padding-top: 22vh;
+  }
+
+  #intro {
+    width: 85%;
+  }
+}
+@media all and (max-width: 1200px) and (min-width: 769px) {
+  body {
+    margin: 55px 80px;
+  }
+
+  h1 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .subheader {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .nav {
+    font-size: 18px;
+    z-index: 100;
+  }
+
+  li {
+    padding-left: 100px;
+  }
+
+  .tileTitle {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .infoContent {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .pictureInfo {
+    padding-bottom: 70px;
+    text-align: center;
+  }
+
+  .pictureInfo > img {
+    width: 35vw;
+  }
+
+  .infoText {
+    padding-left: 40px;
+  }
+
+  #tile8 {
+    margin-bottom: -370px;
+  }
+
+  #introContainer {
+    padding-top: 18vh;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
