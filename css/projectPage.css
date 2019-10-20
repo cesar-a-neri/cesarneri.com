@@ -146,6 +146,10 @@ width: 60vw;
     width: 85%;
 }
 
+.flex2-2 > video{
+    width: 85%;
+}
+
 .fullSpanImage > img{
     width: 100%;
 }
