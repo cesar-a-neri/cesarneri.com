@@ -422,7 +422,7 @@ header {
 
 #helloArrow{
   padding-bottom: 7px;
-  padding-right: 7px;
+  padding-right: 12px;
 }
 
 @keyframes leftToRight {
