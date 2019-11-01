@@ -514,6 +514,7 @@ header {
   }
 
   .nav {
+    z-index: 100;
     font-size: 16px;
   }
 
