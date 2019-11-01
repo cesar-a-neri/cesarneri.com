@@ -86,10 +86,6 @@ width: 60vw;
   z-index: 100;
 }
 
-.menu li:hover .mainContent {
-  opacity: 0.5;
-}
-
 
 .menu ul a {
   color: #F7F7F7;
@@ -100,6 +96,9 @@ width: 60vw;
   z-index: 100;
 }
 
+.menu ul a:hover {
+  opacity: 1;
+}
 
 #menuExpand{
   padding-left: 10px;
