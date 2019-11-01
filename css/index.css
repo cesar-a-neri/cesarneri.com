@@ -8,6 +8,7 @@
   src: url("../assets/fonts/FaktPro-SemiBold.ttf") format("truetype");
   font-weight: Semibold;
 }
+
 html {
   background-color: #212121;
   scroll-behavior: smooth;
@@ -419,6 +420,11 @@ header {
   padding-right: 20px;
 }
 
+#helloArrow{
+  padding-bottom: 7px;
+  padding-right: 7px;
+}
+
 @keyframes leftToRight {
   from {
     transform: translateX(-15px);
@@ -476,6 +482,14 @@ header {
   }
 }
 @media all and (max-width: 480px) {
+  html{
+    cursor: inherit;
+  }
+
+  a{
+    cursor: pointer;
+  }
+
   body {
     margin: 35px 25px;
   }
@@ -505,6 +519,14 @@ header {
 
   li {
     padding-left: 60px;
+  }
+
+  .cursor--small {
+    display: none;
+  }
+
+  .cursor--canvas {
+    display: none;
   }
 
   .tilt {
@@ -641,10 +663,25 @@ header {
   .pictureInfo {
     width: 100%;
   }
+
+  #helloArrow{
+    height: 10px;
+    padding-bottom: 3px;
+    padding-right: 7px;
+  }
+
 }
 @media all and (max-width: 600px) and (min-width: 481px) {
+  html{
+    cursor: inherit;
+  }
+
   body {
     margin: 35px 40px;
+  }
+
+  a{
+    cursor: pointer;
   }
 
   h1 {
@@ -672,6 +709,14 @@ header {
 
   li {
     padding-left: 60px;
+  }
+
+  .cursor--small {
+    display: none;
+  }
+
+  .cursor--canvas {
+    display: none;
   }
 
   .tileTitle {
@@ -811,6 +856,11 @@ header {
   #intro {
     width: 85%;
   }
+
+  #helloArrow{
+    padding-bottom: 3px;
+    padding-right: 7px;
+  }
 }
 @media all and (max-width: 1200px) and (min-width: 769px) {
   body {
@@ -869,6 +919,11 @@ header {
 
   #introContainer {
     padding-top: 18vh;
+  }
+
+  #helloArrow{
+    padding-bottom: 3px;
+    padding-right: 7px;
   }
 }
 
