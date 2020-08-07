@@ -48,7 +48,7 @@ h2 {
 p {
   font-family: "FaktPro Normal";
   font-size: 18px;
-  line-height: 38px;
+  line-height: 32px;
   color: #F7F7F7;
 }
 
@@ -510,8 +510,8 @@ header {
   }
 
   p {
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .nav {
@@ -701,8 +701,8 @@ header {
   }
 
   p {
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 28px;
   }
 
   .nav {
@@ -879,7 +879,7 @@ header {
   }
 
   p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 26px;
   }
 
