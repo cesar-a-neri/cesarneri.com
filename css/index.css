@@ -316,6 +316,19 @@ header {
   padding-left: 100px;
 }
 
+#tileDeGenerativeDesign {
+  position: relative;
+  width: 25vw;
+  margin-bottom: -300px
+}
+
+#tilePhotomicrography {
+  position: relative;
+  width: 30vw;
+  left: 60%;
+  bottom: 70px;
+}
+
 #tile1 {
   width: 60vw;
 }
