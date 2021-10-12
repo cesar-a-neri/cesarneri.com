@@ -600,6 +600,26 @@ header {
     width: 100%;
   }
 
+#tileDeGenerativeDesign{
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  /* top: 0px; */
+  margin-bottom: 0px;
+  /* left: 0px; */
+  /* right: 0px; */
+}
+
+  #tilePhotomicrography{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
   #tile1 {
     width: 100%;
     top: 0px;
