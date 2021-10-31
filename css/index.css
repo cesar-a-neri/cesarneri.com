@@ -316,10 +316,18 @@ header {
   padding-left: 100px;
 }
 
+#tilePunchingIn{
+  position: relative;
+  width: 20vw;
+  left: 50%;
+  margin-top: 150px;
+  margin-bottom: -200px;
+}
+
 #tileDeGenerativeDesign {
   position: relative;
   width: 25vw;
-  margin-bottom: -300px
+  margin-bottom: -200px;
 }
 
 #tilePhotomicrography {
@@ -340,20 +348,25 @@ header {
 }
 
 #tile3 {
+  /* colorSpance */
+  position: relative;
   width: 40vw;
+  left: 50%;
 }
 
 #tile4 {
+  /* formandCode */
   position: relative;
   width: 20vw;
-  left: 70%;
+  /* left: 70%; */
   bottom: 380px;
 }
 
 #tile5 {
+  /* tidalLight */
   position: relative;
   width: 40vw;
-  left: 25%;
+  left: 20%;
   bottom: 370px;
 }
 
@@ -366,7 +379,7 @@ header {
 #tile7 {
   position: relative;
   width: 30vw;
-  left: 57%;
+  left: 60%;
   bottom: 370px;
 }
 
