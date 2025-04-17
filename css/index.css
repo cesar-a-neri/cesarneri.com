@@ -8,7 +8,6 @@
   src: url("../assets/fonts/FaktPro-SemiBold.ttf") format("truetype");
   font-weight: Semibold;
 }
-
 html {
   background-color: #212121;
   scroll-behavior: smooth;
@@ -294,10 +293,8 @@ header {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
-  /* Remove scrollbar space */
-  background: transparent;
-  /* Optional: just make scrollbar invisible */
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
 
 .infoContent {
@@ -316,7 +313,7 @@ header {
   padding-left: 100px;
 }
 
-#tilePunchingIn{
+#tilePunchingIn {
   position: relative;
   width: 20vw;
   left: 50%;
@@ -447,7 +444,7 @@ header {
   padding-right: 20px;
 }
 
-#helloArrow{
+#helloArrow {
   padding-bottom: 7px;
   padding-right: 12px;
 }
@@ -509,111 +506,88 @@ header {
   }
 }
 @media all and (max-width: 480px) {
-  html{
+  html {
     cursor: inherit;
   }
-
-  a{
+  a {
     cursor: pointer;
   }
-
   body {
     margin: 35px 25px;
   }
-
   h1 {
     font-size: 24px;
     line-height: 30px;
   }
-
   h2 {
     font-size: 22px;
     line-height: 28px;
   }
-
   .subheader {
     font-size: 20px;
   }
-
   p {
     font-size: 16px;
     line-height: 24px;
   }
-
   .nav {
     z-index: 100;
     font-size: 16px;
   }
-
   li {
     padding-left: 60px;
   }
-
   .cursor--small {
     display: none;
   }
-
   .cursor--canvas {
     display: none;
   }
-
   .tilt {
     margin-top: 150px;
     margin-bottom: -10px;
   }
-
   .tileTitle {
     font-size: 20px;
     line-height: 22px;
     top: calc(100% + 30px);
   }
-
   .tileSubtitle {
     font-size: 10px;
     letter-spacing: 1.5px;
     line-height: 30px;
   }
-
   .tileInfoLeft {
     display: none;
   }
-
   .tileInfoRight {
     display: none;
   }
-
   .viewProject {
     display: none;
   }
-
   .viewProject2 {
     display: none;
   }
-
   .infoContent {
     display: block;
     padding-top: 50px;
     padding-bottom: 100px;
   }
-
   .pictureInfo {
     padding-bottom: 25px;
     text-align: center;
   }
-
   .pictureInfo > img {
     width: 70vw;
   }
-
   .infoText {
     padding-left: 0px;
   }
-
   #intro {
     width: 100%;
   }
-
-  #tilePunchingIn{
+  #tilePunchingIn {
     width: 65%;
     margin-left: auto;
     margin-right: auto;
@@ -623,18 +597,16 @@ header {
     left: 0px;
     right: 0px;
   }
-
-#tileDeGenerativeDesign{
-  width: 65%;
-  margin-left: auto;
-  margin-right: auto;
-  top: 0px;
-  margin-bottom: 0px;
-  /* left: 0px; */
-  /* right: 0px; */
-}
-
-  #tilePhotomicrography{
+  #tileDeGenerativeDesign {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    margin-bottom: 0px;
+    /* left: 0px; */
+    /* right: 0px; */
+  }
+  #tilePhotomicrography {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
@@ -643,7 +615,6 @@ header {
     left: 0px;
     right: 0px;
   }
-
   #tile1 {
     width: 100%;
     top: 0px;
@@ -651,7 +622,6 @@ header {
     left: 0px;
     right: 0px;
   }
-
   #tile2 {
     width: 100%;
     top: 0px;
@@ -659,7 +629,6 @@ header {
     left: 0px;
     right: 0px;
   }
-
   #tile3 {
     width: 100%;
     top: 0px;
@@ -667,7 +636,6 @@ header {
     left: 0px;
     right: 0px;
   }
-
   #tile4 {
     width: 65%;
     margin-left: auto;
@@ -677,7 +645,6 @@ header {
     left: 0px;
     right: 0px;
   }
-
   #tile5 {
     width: 100%;
     top: 0px;
@@ -685,7 +652,6 @@ header {
     left: 0px;
     right: 0px;
   }
-
   #tile6 {
     width: 100%;
     top: 0px;
@@ -693,7 +659,6 @@ header {
     left: 0px;
     right: 0px;
   }
-
   #tile7 {
     width: 70%;
     margin-left: auto;
@@ -703,7 +668,6 @@ header {
     left: 0px;
     right: 0px;
   }
-
   #tile8 {
     width: 70%;
     margin-left: auto;
@@ -714,113 +678,89 @@ header {
     right: 0px;
     margin-bottom: 200px;
   }
-
   .column {
     width: 100%;
   }
-
   .pictureInfo {
     width: 100%;
   }
-
-  #helloArrow{
+  #helloArrow {
     height: 10px;
     padding-bottom: 3px;
     padding-right: 7px;
   }
-
 }
 @media all and (max-width: 600px) and (min-width: 481px) {
-  html{
+  html {
     cursor: inherit;
   }
-
   body {
     margin: 35px 40px;
   }
-
-  a{
+  a {
     cursor: pointer;
   }
-
   h1 {
     font-size: 24px;
     line-height: 30px;
   }
-
   h2 {
     font-size: 22px;
     line-height: 28px;
   }
-
   .subheader {
     font-size: 20px;
   }
-
   p {
     font-size: 18px;
     line-height: 28px;
   }
-
   .nav {
     font-size: 16px;
   }
-
   li {
     padding-left: 60px;
   }
-
   .cursor--small {
     display: none;
   }
-
   .cursor--canvas {
     display: none;
   }
-
   .tileTitle {
     font-size: 20px;
     line-height: 22px;
     top: calc(100% + 30px);
   }
-
   .tileSubtitle {
     font-size: 10px;
     letter-spacing: 1.5px;
     line-height: 30px;
   }
-
   .tileInfoLeft {
     display: none;
   }
-
   .tileInfoRight {
     display: none;
   }
-
   .viewProject {
     display: none;
   }
-
   .viewProject2 {
     display: none;
   }
-
   .infoContent {
     display: block;
     padding-top: 50px;
     padding-bottom: 100px;
   }
-
   .pictureInfo {
     padding-bottom: 25px;
     text-align: center;
   }
-
   .pictureInfo > img {
     width: 50vw;
   }
-
   .infoText {
     padding-left: 0px;
   }
@@ -829,98 +769,77 @@ header {
   body {
     margin: 45px 60px;
   }
-
   h1 {
     font-size: 32px;
     line-height: 34px;
   }
-
   h2 {
     font-size: 28px;
     line-height: 32px;
   }
-
   .subheader {
     font-size: 26px;
   }
-
   p {
     font-size: 18px;
     line-height: 26px;
   }
-
   .nav {
     font-size: 20px;
   }
-
   li {
     padding-left: 100px;
   }
-
   .tileTitle {
     font-size: 20px;
     line-height: 22px;
     top: calc(100% + 30px);
   }
-
   .tileSubtitle {
     font-size: 10px;
     letter-spacing: 1.5px;
     line-height: 30px;
   }
-
   .tileInfoLeft {
     display: none;
   }
-
   .tileInfoRight {
     display: none;
   }
-
   .viewProject {
     display: none;
   }
-
   .viewProject2 {
     display: none;
   }
-
   .infoContent {
     display: block;
     padding-top: 50px;
     padding-bottom: 100px;
   }
-
   .pictureInfo {
     padding-bottom: 70px;
     text-align: center;
   }
-
   .pictureInfo > img {
     width: 50vw;
   }
-
   .infoText {
     padding-left: 0px;
   }
-
-  #tilePunchingIn{
+  #tilePunchingIn {
     width: 30vw;
   }
-
   #tile8 {
     margin-bottom: -470px;
   }
-
   #introContainer {
     padding-top: 22vh;
   }
-
   #intro {
     width: 85%;
   }
-
-  #helloArrow{
+  #helloArrow {
     padding-bottom: 3px;
     padding-right: 7px;
   }
@@ -929,65 +848,50 @@ header {
   body {
     margin: 55px 80px;
   }
-
   h1 {
     font-size: 30px;
     line-height: 32px;
   }
-
   .subheader {
     font-size: 22px;
   }
-
   p {
     font-size: 18px;
     line-height: 26px;
   }
-
   .nav {
     font-size: 18px;
     z-index: 100;
   }
-
   li {
     padding-left: 100px;
   }
-
   .tileTitle {
     font-size: 28px;
     line-height: 32px;
   }
-
   .infoContent {
     padding-top: 50px;
     padding-bottom: 100px;
   }
-
   .pictureInfo {
     padding-bottom: 70px;
     text-align: center;
   }
-
   .pictureInfo > img {
     width: 35vw;
   }
-
   .infoText {
     padding-left: 40px;
   }
-
   #tile8 {
     margin-bottom: -370px;
   }
-
   #introContainer {
     padding-top: 18vh;
   }
-
-  #helloArrow{
+  #helloArrow {
     padding-bottom: 3px;
     padding-right: 7px;
   }
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
