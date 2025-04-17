@@ -8,9 +8,8 @@
   src: url("../assets/fonts/FaktPro-SemiBold.ttf") format("truetype");
   font-weight: Semibold;
 }
-
 html {
-  background-color: #212121;
+  background-color: #7f23bd;
   scroll-behavior: smooth;
   box-sizing: inherit;
   cursor: none;
@@ -48,7 +47,7 @@ h2 {
 p {
   font-family: "FaktPro Normal";
   font-size: 18px;
-  line-height: 32px;
+  line-height: 38px;
   color: #F7F7F7;
 }
 
@@ -74,7 +73,6 @@ a {
   font-family: "FaktPro Normal";
   font-size: 20px;
   letter-spacing: 0px;
-  position: relative;
   opacity: 0;
   z-index: 100;
   animation: riseFade 0.4s forwards;
@@ -276,7 +274,7 @@ a.ulink.block, a.ulink:visited.block {
 .page-scroll-indicator {
   width: 5px;
   height: 100vh;
-  background: #212121;
+  background: #7f23bd;
 }
 
 .progress {
@@ -294,10 +292,8 @@ header {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
-  /* Remove scrollbar space */
-  background: transparent;
-  /* Optional: just make scrollbar invisible */
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
 
 .infoContent {
@@ -316,27 +312,6 @@ header {
   padding-left: 100px;
 }
 
-#tilePunchingIn{
-  position: relative;
-  width: 20vw;
-  left: 50%;
-  margin-top: 150px;
-  margin-bottom: -200px;
-}
-
-#tileDeGenerativeDesign {
-  position: relative;
-  width: 25vw;
-  margin-bottom: -200px;
-}
-
-#tilePhotomicrography {
-  position: relative;
-  width: 30vw;
-  left: 60%;
-  bottom: 70px;
-}
-
 #tile1 {
   width: 60vw;
 }
@@ -348,25 +323,20 @@ header {
 }
 
 #tile3 {
-  /* colorSpance */
-  position: relative;
   width: 40vw;
-  left: 50%;
 }
 
 #tile4 {
-  /* formandCode */
   position: relative;
   width: 20vw;
-  /* left: 70%; */
+  left: 70%;
   bottom: 380px;
 }
 
 #tile5 {
-  /* tidalLight */
   position: relative;
   width: 40vw;
-  left: 20%;
+  left: 25%;
   bottom: 370px;
 }
 
@@ -379,7 +349,7 @@ header {
 #tile7 {
   position: relative;
   width: 30vw;
-  left: 60%;
+  left: 57%;
   bottom: 370px;
 }
 
@@ -447,11 +417,6 @@ header {
   padding-right: 20px;
 }
 
-#helloArrow{
-  padding-bottom: 7px;
-  padding-right: 12px;
-}
-
 @keyframes leftToRight {
   from {
     transform: translateX(-15px);
@@ -509,141 +474,74 @@ header {
   }
 }
 @media all and (max-width: 480px) {
-  html{
-    cursor: inherit;
-  }
-
-  a{
-    cursor: pointer;
-  }
-
   body {
     margin: 35px 25px;
   }
-
   h1 {
     font-size: 24px;
     line-height: 30px;
   }
-
   h2 {
     font-size: 22px;
     line-height: 28px;
   }
-
   .subheader {
     font-size: 20px;
   }
-
   p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 26px;
   }
-
   .nav {
-    z-index: 100;
     font-size: 16px;
   }
-
   li {
     padding-left: 60px;
   }
-
-  .cursor--small {
-    display: none;
-  }
-
-  .cursor--canvas {
-    display: none;
-  }
-
   .tilt {
     margin-top: 150px;
     margin-bottom: -10px;
   }
-
   .tileTitle {
     font-size: 20px;
     line-height: 22px;
     top: calc(100% + 30px);
   }
-
   .tileSubtitle {
     font-size: 10px;
     letter-spacing: 1.5px;
     line-height: 30px;
   }
-
   .tileInfoLeft {
     display: none;
   }
-
   .tileInfoRight {
     display: none;
   }
-
   .viewProject {
     display: none;
   }
-
   .viewProject2 {
     display: none;
   }
-
   .infoContent {
     display: block;
     padding-top: 50px;
     padding-bottom: 100px;
   }
-
   .pictureInfo {
     padding-bottom: 25px;
     text-align: center;
   }
-
   .pictureInfo > img {
     width: 70vw;
   }
-
   .infoText {
     padding-left: 0px;
   }
-
   #intro {
     width: 100%;
   }
-
-  #tilePunchingIn{
-    width: 65%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 100px;
-    /* top: 100px; */
-    bottom: 200px;
-    left: 0px;
-    right: 0px;
-  }
-
-#tileDeGenerativeDesign{
-  width: 65%;
-  margin-left: auto;
-  margin-right: auto;
-  top: 0px;
-  margin-bottom: 0px;
-  /* left: 0px; */
-  /* right: 0px; */
-}
-
-  #tilePhotomicrography{
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-  }
-
   #tile1 {
     width: 100%;
     top: 0px;
@@ -651,7 +549,6 @@ header {
     left: 0px;
     right: 0px;
   }
-
   #tile2 {
     width: 100%;
     top: 0px;
@@ -659,7 +556,6 @@ header {
     left: 0px;
     right: 0px;
   }
-
   #tile3 {
     width: 100%;
     top: 0px;
@@ -667,7 +563,6 @@ header {
     left: 0px;
     right: 0px;
   }
-
   #tile4 {
     width: 65%;
     margin-left: auto;
@@ -677,7 +572,6 @@ header {
     left: 0px;
     right: 0px;
   }
-
   #tile5 {
     width: 100%;
     top: 0px;
@@ -685,7 +579,6 @@ header {
     left: 0px;
     right: 0px;
   }
-
   #tile6 {
     width: 100%;
     top: 0px;
@@ -693,7 +586,6 @@ header {
     left: 0px;
     right: 0px;
   }
-
   #tile7 {
     width: 70%;
     margin-left: auto;
@@ -703,7 +595,6 @@ header {
     left: 0px;
     right: 0px;
   }
-
   #tile8 {
     width: 70%;
     margin-left: auto;
@@ -714,113 +605,72 @@ header {
     right: 0px;
     margin-bottom: 200px;
   }
-
   .column {
     width: 100%;
   }
-
   .pictureInfo {
     width: 100%;
   }
-
-  #helloArrow{
-    height: 10px;
-    padding-bottom: 3px;
-    padding-right: 7px;
-  }
-
 }
 @media all and (max-width: 600px) and (min-width: 481px) {
-  html{
-    cursor: inherit;
-  }
-
   body {
     margin: 35px 40px;
   }
-
-  a{
-    cursor: pointer;
-  }
-
   h1 {
     font-size: 24px;
     line-height: 30px;
   }
-
   h2 {
     font-size: 22px;
     line-height: 28px;
   }
-
   .subheader {
     font-size: 20px;
   }
-
   p {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 14px;
+    line-height: 26px;
   }
-
   .nav {
     font-size: 16px;
   }
-
   li {
     padding-left: 60px;
   }
-
-  .cursor--small {
-    display: none;
-  }
-
-  .cursor--canvas {
-    display: none;
-  }
-
   .tileTitle {
     font-size: 20px;
     line-height: 22px;
     top: calc(100% + 30px);
   }
-
   .tileSubtitle {
     font-size: 10px;
     letter-spacing: 1.5px;
     line-height: 30px;
   }
-
   .tileInfoLeft {
     display: none;
   }
-
   .tileInfoRight {
     display: none;
   }
-
   .viewProject {
     display: none;
   }
-
   .viewProject2 {
     display: none;
   }
-
   .infoContent {
     display: block;
     padding-top: 50px;
     padding-bottom: 100px;
   }
-
   .pictureInfo {
     padding-bottom: 25px;
     text-align: center;
   }
-
   .pictureInfo > img {
     width: 50vw;
   }
-
   .infoText {
     padding-left: 0px;
   }
@@ -829,165 +679,118 @@ header {
   body {
     margin: 45px 60px;
   }
-
   h1 {
     font-size: 32px;
     line-height: 34px;
   }
-
   h2 {
     font-size: 28px;
     line-height: 32px;
   }
-
   .subheader {
     font-size: 26px;
   }
-
   p {
     font-size: 18px;
     line-height: 26px;
   }
-
   .nav {
     font-size: 20px;
   }
-
   li {
     padding-left: 100px;
   }
-
   .tileTitle {
     font-size: 20px;
     line-height: 22px;
     top: calc(100% + 30px);
   }
-
   .tileSubtitle {
     font-size: 10px;
     letter-spacing: 1.5px;
     line-height: 30px;
   }
-
   .tileInfoLeft {
     display: none;
   }
-
   .tileInfoRight {
     display: none;
   }
-
   .viewProject {
     display: none;
   }
-
   .viewProject2 {
     display: none;
   }
-
   .infoContent {
     display: block;
     padding-top: 50px;
     padding-bottom: 100px;
   }
-
   .pictureInfo {
     padding-bottom: 70px;
     text-align: center;
   }
-
   .pictureInfo > img {
     width: 50vw;
   }
-
   .infoText {
     padding-left: 0px;
   }
-
-  #tilePunchingIn{
-    width: 30vw;
-  }
-
   #tile8 {
     margin-bottom: -470px;
   }
-
   #introContainer {
     padding-top: 22vh;
   }
-
   #intro {
     width: 85%;
-  }
-
-  #helloArrow{
-    padding-bottom: 3px;
-    padding-right: 7px;
   }
 }
 @media all and (max-width: 1200px) and (min-width: 769px) {
   body {
     margin: 55px 80px;
   }
-
   h1 {
     font-size: 30px;
     line-height: 32px;
   }
-
   .subheader {
     font-size: 22px;
   }
-
   p {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 26px;
   }
-
   .nav {
     font-size: 18px;
     z-index: 100;
   }
-
   li {
     padding-left: 100px;
   }
-
   .tileTitle {
     font-size: 28px;
     line-height: 32px;
   }
-
   .infoContent {
     padding-top: 50px;
     padding-bottom: 100px;
   }
-
   .pictureInfo {
     padding-bottom: 70px;
     text-align: center;
   }
-
   .pictureInfo > img {
     width: 35vw;
   }
-
   .infoText {
     padding-left: 40px;
   }
-
   #tile8 {
     margin-bottom: -370px;
   }
-
   #introContainer {
     padding-top: 18vh;
   }
-
-  #helloArrow{
-    padding-bottom: 3px;
-    padding-right: 7px;
-  }
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
