@@ -1,3 +1,7 @@
+@import './variables.css';
+
+
+
 @font-face {
   font-family: "FaktPro Normal";
   src: url("../assets/fonts/FaktPro-Normal.ttf") format("truetype");
@@ -8,15 +12,16 @@
   src: url("../assets/fonts/FaktPro-SemiBold.ttf") format("truetype");
   font-weight: Semibold;
 }
+
 html {
-  background-color: #212121;
+  background-color: var(--dark-color);
   scroll-behavior: smooth;
   box-sizing: inherit;
   cursor: none;
 }
 
 body {
-  color: #F7F7F7;
+  color: var(--light-color);
   margin: 65px 15vh;
 }
 
@@ -48,7 +53,7 @@ p {
   font-family: "FaktPro Normal";
   font-size: 18px;
   line-height: 32px;
-  color: #F7F7F7;
+  color: var(--light-color);
 }
 
 .pUnderline {
@@ -60,13 +65,13 @@ p {
 }
 
 a {
-  color: #F7F7F7;
+  color: var(--light-color);
   cursor: none;
   text-decoration: none;
 }
 
 .underline {
-  border-bottom: 2px solid #F7F7F7;
+  border-bottom: 2px solid var(--light-color);
 }
 
 .nav {
@@ -101,7 +106,7 @@ li {
 }
 
 svg {
-  stroke: #F7F7F7;
+  stroke: var(--light-color);
 }
 
 .cursor {
@@ -118,7 +123,7 @@ svg {
   top: -6px;
   border-radius: 50%;
   z-index: 11000;
-  background: #F7F7F7;
+  background: var(--light-color);
 }
 
 .cursor--canvas {
@@ -127,27 +132,31 @@ svg {
   z-index: 12000;
 }
 
-a.ulink, a.ulink:visited {
+a.ulink,
+a.ulink:visited {
   text-decoration: none;
   position: relative;
 }
 
-a.ulink:after, a.ulink:visited:after {
+a.ulink:after,
+a.ulink:visited:after {
   content: "";
   height: 2px;
   position: absolute;
   bottom: -3px;
   left: 0;
   width: 0%;
-  background: #F7F7F7;
+  background: var(--light-color);
   transition: 0.3s;
 }
 
-a.ulink:hover:after, a.ulink:visited:hover:after {
+a.ulink:hover:after,
+a.ulink:visited:hover:after {
   width: 100%;
 }
 
-a.ulink.block, a.ulink:visited.block {
+a.ulink.block,
+a.ulink:visited.block {
   display: block;
   padding: 0.5em;
 }
@@ -242,13 +251,9 @@ a.ulink.block, a.ulink:visited.block {
   white-space: nowrap;
   transform: rotate(-90deg);
   transform-origin: bottom left;
-  /* Safari */
   -webkit-transform: rotate(-90deg);
-  /* Firefox */
   -moz-transform: rotate(-90deg);
-  /* IE */
   -ms-transform: rotate(-90deg);
-  /* Opera */
   -o-transform: rotate(-90deg);
 }
 
@@ -262,26 +267,22 @@ a.ulink.block, a.ulink:visited.block {
   white-space: nowrap;
   transform: rotate(-90deg);
   transform-origin: top right;
-  /* Safari */
   -webkit-transform: rotate(-90deg);
-  /* Firefox */
   -moz-transform: rotate(-90deg);
-  /* IE */
   -ms-transform: rotate(-90deg);
-  /* Opera */
   -o-transform: rotate(-90deg);
 }
 
 .page-scroll-indicator {
   width: 5px;
   height: 100vh;
-  background: #212121;
+  background: var(--dark-color);
 }
 
 .progress {
   width: 5px;
   height: 0vh;
-  background: #F7F7F7;
+  background: var(--light-color);
 }
 
 header {
@@ -292,7 +293,7 @@ header {
   height: 100%;
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar /* Remove scrollbar space */ {
   width: 0px; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
 }
@@ -345,22 +346,18 @@ header {
 }
 
 #tile3 {
-  /* colorSpance */
   position: relative;
   width: 40vw;
   left: 50%;
 }
 
 #tile4 {
-  /* formandCode */
   position: relative;
   width: 20vw;
-  /* left: 70%; */
   bottom: 380px;
 }
 
 #tile5 {
-  /* tidalLight */
   position: relative;
   width: 40vw;
   left: 20%;
@@ -592,7 +589,6 @@ header {
     margin-left: auto;
     margin-right: auto;
     padding-top: 100px;
-    /* top: 100px; */
     bottom: 200px;
     left: 0px;
     right: 0px;
@@ -603,8 +599,6 @@ header {
     margin-right: auto;
     top: 0px;
     margin-bottom: 0px;
-    /* left: 0px; */
-    /* right: 0px; */
   }
   #tilePhotomicrography {
     width: 75%;
