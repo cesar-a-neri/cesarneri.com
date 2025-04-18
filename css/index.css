@@ -25,15 +25,6 @@ body {
   margin: 65px 15vh;
 }
 
-body.disable-custom-cursor {
-  cursor: default;
-}
-
-body.disable-custom-cursor .cursor--small,
-body.disable-custom-cursor .cursor--canvas {
-  display: none;
-}
-
 h1 {
   font-family: "FaktPro Semibold";
   font-size: 43px;

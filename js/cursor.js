@@ -1,3 +1,4 @@
+
 window.onload = function() {
 
 // set the starting position of the cursor outside of the screen
@@ -27,24 +28,6 @@ const initCursor = () => {
   };
   requestAnimationFrame(render);
 };
-
-const toggleCursor = () => {
-  const body = document.body;
-  const isCustomCursorEnabled = !body.classList.contains("disable-custom-cursor");
-
-  if (isCustomCursorEnabled) {
-    body.classList.add("disable-custom-cursor");
-  } else {
-    body.classList.remove("disable-custom-cursor");
-  }
-};
-
-document.addEventListener("DOMContentLoaded", () => {
-  const cursorToggle = document.getElementById("cursorToggle");
-  if (cursorToggle) {
-    cursorToggle.addEventListener("change", toggleCursor);
-  }
-});
 
 const initCanvas = () => {
   const canvas = document.querySelector(".cursor--canvas");
