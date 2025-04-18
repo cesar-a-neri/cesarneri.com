@@ -17,7 +17,9 @@ html {
   background-color: var(--dark-color);
   scroll-behavior: smooth;
   box-sizing: inherit;
-  cursor: none;
+  /* cursor: none; */
+  /* cursor:inherit */
+
 }
 
 body {
@@ -66,7 +68,8 @@ p {
 
 a {
   color: var(--light-color);
-  cursor: none;
+  /* cursor: none; */
+  /* cursor: pointer; */
   text-decoration: none;
 }
 
@@ -109,12 +112,12 @@ svg {
   stroke: var(--light-color);
 }
 
-.cursor {
+/* .cursor {
   position: fixed;
   left: 0;
   top: 0;
   pointer-events: none;
-}
+} */
 
 .cursor--small {
   width: 12px;

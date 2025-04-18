@@ -1,0 +1,23 @@
+.cursor-toggle-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.cursor-toggle-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  cursor: pointer;
+  border: 2px solid #333;
+}
+
+html.crosshair-cursor .cursor-toggle-circle {
+  background-color: green;
+}
+
+html.crosshair-cursor, html.crosshair-cursor a {
+  cursor: crosshair !important;
+}
