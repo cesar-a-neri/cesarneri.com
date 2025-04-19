@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
       } else {
         ctx.lineTo(x, y);
         ctx.strokeStyle = 'red';
-        ctx.lineWidth = 1;
+        ctx.lineWidth = 3;
         ctx.stroke();
       }
     } else {

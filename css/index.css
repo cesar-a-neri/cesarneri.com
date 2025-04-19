@@ -14,7 +14,7 @@
 }
 
 html {
-  background-color: var(--dark-color);
+  background-color: var(--background-color);
   scroll-behavior: smooth;
   box-sizing: inherit;
   /* cursor: none; */
@@ -55,7 +55,7 @@ p {
   font-family: "FaktPro Normal";
   font-size: 18px;
   line-height: 32px;
-  color: var(--light-color);
+  color: var(--text-primary-color);
 }
 
 .pUnderline {
@@ -67,7 +67,7 @@ p {
 }
 
 a {
-  color: var(--light-color);
+  color: var(--text-primary-color);
   /* cursor: none; */
   /* cursor: pointer; */
   text-decoration: none;
@@ -279,13 +279,13 @@ a.ulink:visited.block {
 .page-scroll-indicator {
   width: 5px;
   height: 100vh;
-  background: var(--dark-color);
+  background: var(--background-color);
 }
 
 .progress {
   width: 5px;
   height: 0vh;
-  background: var(--light-color);
+  background: var(--text-primary-color);
 }
 
 header {

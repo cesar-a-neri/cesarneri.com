@@ -51,7 +51,7 @@ width: 60vw;
 
 .visitPageMobile{
   display: none;
-  color: var(--light-color);
+  color: var(--text-primary-color);
 }
 
 .menu {
@@ -62,7 +62,7 @@ width: 60vw;
 }
 
 .menu > li > a {
-  color: var(--light-color);
+  color: var(--text-primary-color);
   display: block;
   text-align: right;
   margin-right: 0 auto;
@@ -91,7 +91,7 @@ width: 60vw;
 
 
 .menu ul a {
-  color: var(--light-color);
+  color: var(--text-primary-color);
   display: block;
   position: relative;
   padding: 5px 20px;
