@@ -1,6 +1,6 @@
 @import './variables.css';
 
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @font-face {
   font-family: "FaktPro Normal";
@@ -29,7 +29,7 @@ body {
 }
 
 h1 {
-  font-family: "FaktPro Normal";
+  font-family: "Inter";
   font-weight: 400;
   font-size: 43px;
   letter-spacing: 0%;
@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-  font-family: "FaktPro Normal";
+  font-family: "Inter";
   font-weight: 400;
   font-size: 30px;
   letter-spacing: 0%;
@@ -45,15 +45,15 @@ h2 {
 }
 
 h3 {
-  font-family: "FaktPro Normal";
-  font-weight: 400;
-  font-size: 26px;
+  font-family: "Inter";
+  font-weight: 350;
+  font-size: 24px;
   letter-spacing: 0px;
   line-height: 35px;
 }
 
 .subheader {
-  font-family: "FaktPro Normal";
+  font-family: "Inter";
   font-size: 27px;
   letter-spacing: 0px;
 }
@@ -81,7 +81,7 @@ h3 {
 } */
 
 p {
-  font-family: "FaktPro Normal";
+  font-family: "Inter";
   font-size: 18px;
   line-height: 32px;
   color: var(--text-primary-color);
@@ -103,6 +103,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  border-bottom: 1px solid var(--primary-color);
+}
+
 p a:hover {
   color: var(--primary-color);
 }
@@ -113,7 +117,7 @@ p a:hover {
 }
 
 .nav {
-  font-family: "FaktPro Normal";
+  font-family: "Inter";
   font-size: 20px;
   letter-spacing: 0px;
   position: relative;
@@ -220,19 +224,24 @@ a.ulink:visited.block {
   font-weight: 400;
   font-size: 32px;
   letter-spacing: 0px;
-  line-height: 50px;
+  line-height: 45px;
   position: absolute;
-  top: calc(100% + 50px);
+  top: calc(100% + 40px);
   left: 0px;
 }
 
 .viewProject {
-  font-family: "FaktPro Normal";
+  font-family: "Inter";
+  color: var(--primary-color);
   opacity: 0;
   font-size: 15px;
-  letter-spacing: 1px;
   line-height: 75px;
   position: absolute;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 4px; /* space between text and icon */
+
   top: calc(100% + 40px);
   right: 0px;
   animation: leftToRightFade 0.4s forwards;
@@ -240,15 +249,34 @@ a.ulink:visited.block {
 }
 
 .viewProject2 {
-  font-family: "FaktPro Normal";
+  font-family: "Inter";
+  color: var(--primary-color);
   opacity: 0;
   font-size: 15px;
-  letter-spacing: 1px;
-  line-height: 50px;
+  line-height: 40px;
   left: 0px;
   animation: leftToRightFade 0.4s forwards;
   animation-timing-function: ease-in;
 }
+
+.viewProject .material-symbols-outlined {
+  font-variation-settings: 
+    'wght' 300; 
+  font-size: 18px;
+  vertical-align: middle;
+  line-height: 1;
+  top: 1px;
+}
+
+.viewProject2 .material-symbols-outlined {
+  font-variation-settings: 
+    'wght' 300; 
+  font-size: 18px;
+  vertical-align: middle;
+  line-height: 1;
+  top: 1px;
+}
+
 
 .tilt:hover .viewProject {
   animation: leftToRight 0.4s forwards;
@@ -272,10 +300,10 @@ a.ulink:visited.block {
 }
 
 .tileSubtitle {
-  font-family: "FaktPro Normal";
-  font-size: 12px;
-  letter-spacing: 1.5px;
-  line-height: 70px;
+  font-family: "Inter";
+  /* font-size: 14px; */
+  color: var(--text-secondary-color);
+  line-height: 50px;
   position: absolute;
   top: 100%;
   left: 0px;
@@ -283,7 +311,7 @@ a.ulink:visited.block {
 
 .tileInfoLeft {
   position: fixed;
-  font-family: "FaktPro Normal";
+  font-family: "Inter";
   font-size: 15px;
   left: calc(100% + 33px);
   bottom: 10px;
@@ -297,9 +325,9 @@ a.ulink:visited.block {
 }
 
 .tileInfoRight {
-  opacity: 0.5;
+  color: var(--text-secondary-color);
   position: fixed;
-  font-family: "FaktPro Normal";
+  font-family: "Inter";
   font-size: 15px;
   right: -15px;
   top: 5px;
@@ -424,7 +452,8 @@ header {
 }
 
 #nameLogo {
-  font-family: "FaktPro Normal";
+  font-family: "Inter";
+  text-decoration: none;
 }
 
 #introContainer {
