@@ -37,8 +37,8 @@
 
   <body>
 
-        <div class="cursor cursor--small"></div>
-        <canvas class="cursor cursor--canvas" resize></canvas>
+        <!-- <div class="cursor cursor--small"></div>
+        <canvas class="cursor cursor--canvas" resize></canvas> -->
 
         <header>
           <div class="page-scroll-indicator">
@@ -58,8 +58,7 @@
 
     <div class="decriptionText">
     <p class="faded">Ennead Architects</p>
-    <h1 id="projTitle">Dynamic Planning</h1>
-    <svg height="8" width="70"><line x1="0" y1="0" x2="50" y2="0" style="stroke-width:4" /></svg>
+    <h1 id="projTitle" class="display-font">Dynamic Planning</h1>
     <br>
     <p>Dynamic Planning is a proof of concept for a SaaS planning platform that allows for data-driven decisions based on live building occupancy. In its current state, it is a data visualization dashboard that connects sensor data and institutional datasets to a building information model (BIM) in order to track an organization's planning goals. </p>
     <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
@@ -72,51 +71,18 @@
       <a href="javascript:delay('https://dynamic-planning.modeloapp.com/login')" class="exitClick visitPageText subheader"><span class="underline">Visit Page</span> <img id="visitSiteArrow" src="../assets/icons/forward_arrow_white.png" height="10px"></a>
   </div>
 
-    <div class="projectStats">
-
-    <div class="date">
-        <p class="bold">
-        Team</p>
-        <p class="faded">
-        <a class="pUnderline exitClick" href="javascript:delay('https://modelo.io/')">Modelo</a><br>
-        <a class="pUnderline exitClick" href="javascript:delay('https://www.sixgill.com/')">Sixgill</a><br>
-        </p>
-    </div>
-    <div class="date">
-      <p class="bold">
-      Duration</p>
-      <p class="faded">
-        February 2019<br>
-        to<br>
-        September 2019
-      </p>
-    </div>
-    <div class="date">
-      <p class="bold">
-      Role</p>
-      <p class="faded">
-      Design Lead<br>
-      Strategy<br>
-      Prototyping<br>
-      Identity
-      </p>
-  </div>
-  <div class="visitPage">
-    <a href="javascript:delay('https://dynamic-planning.modeloapp.com/login')" class="exitClick visitPageText subheader"><span class="underline"><img src="../assets/icons/lock.png" height="20px"> Visit Site</span> <img id="visitSiteArrow" src="../assets/icons/forward_arrow_white.png" height="10px"></a>
-</div>
-
     </div>
 
   <div class='spacer'></div>
 
-  <h2 class="centerStatement">
-    Current planning practices are outdated in their methods of data gathering. While smart buildings promise increased access to utilization metrics, there’s still a glaring human deficit in the nature of this data. </h2>
+  <h3 class="centerStatement display-font">
+    Current planning practices are outdated in their methods of data gathering. While smart buildings promise increased access to utilization metrics, there’s still a glaring human deficit in the nature of this data. </h3>
 
   <div class='spacer'></div>
 
   <div class="flex2-container">
     <div class="flex2-1">
-    <span class="subheader bold">Current Planning Arc
+    <span class="subheader bold display-font">Current Planning Arc
 
     <p class="faded">Most planning practices currently implement a waterfall planning arc where a project is completed in linear, distinct stages and changes in the original plan are difficult to accommodate. For this approach to be successful, a team needs to have a vast amount of data about the project from the start, which is often not the case.</p>
     </span>
@@ -131,7 +97,7 @@
 
   <div class="flex2-container-reversed">
     <div class="flex2-1-reversed">
-    <span class="subheader bold">Planning Agility
+    <span class="subheader bold display-font">Planning Agility
 
     <p class="faded">The industry is trying to move to a more agile approach, where planning decisions are done in a cyclical manner and each stage builds on top of each other. These decisions are driven by insights gained from different stages of the process happening concurrently.</p>
     </span>
@@ -144,9 +110,9 @@
   <div class="spacer"></div>
 
 
-  <h2 class="centerStatement">
+  <h3 class="centerStatement display-font">
     Planners need access to a reliable stream of metrics on building utilization paired with static organizational data in order to gain insight into human-centered space performance.
-  </h2>
+  </h3>
 
 
   <div class="spanImage70">
@@ -154,7 +120,7 @@
   </div>
 
     <div class="flex2-1 rightAlign">
-    <span class="subheader bold">Dashboard Interface
+    <span class="subheader bold display-font">Dashboard Interface
 
     <p class="faded">
       Dynamic Planning does not aim to replace the role of a designer or planner. Rather, it aims to provide more agility and intelligence to their work by proposing a new framework for planning. For the user to obtain these insights, we decided to implement a visualization dashboard with search functionality as the principal mode of interaction.
@@ -173,7 +139,7 @@
 
   <div class="flex2-container-reversed">
     <div class="flex2-1-reversed">
-    <span class="subheader bold">Visualizing Data
+    <span class="subheader bold display-font">Visualizing Data
 
     <p class="faded">
       Dashboard data visualizations fell into three main categories: tabular representation, infographics, and spatial visualizations. These were designed and developed concurrently in order to establish a system for them to connect and represent the same data.
@@ -189,7 +155,7 @@
 
   <div class="flex2-container">
     <div class="flex2-1">
-    <span class="subheader bold">Infographics
+    <span class="subheader bold display-font">Infographics
 
     <p class="faded">
       The infographics developed were to accommodate for the various data types we would be inputting into the system as well as the manner in which the user would want to pair the data with each other. We designed and developed a total of 18 visualization types using the d3.js library.
@@ -211,7 +177,7 @@
 
   <div class="flex2-container-reversed">
     <div class="flex2-1-reversed">
-    <span class="subheader bold">Flexible Color System
+    <span class="subheader bold display-font">Flexible Color System
 
     <p class="faded">
       A color system consisting of 10 base colors was implemented in order to distinguish between different elements for each visualization while also conveying the identity of the platform.
@@ -226,7 +192,7 @@
   <div class="spacer"></div>
 
     <div class="flex2-1">
-    <span class="subheader bold">3D Representation</span>
+    <span class="subheader bold display-font">3D Representation</span>
 
     <p class="faded">
       Modelo, our development partner, already had a robust framework to connect and visualize BIM files in the browser. We worked closely with them in order to further stylize these models and develop new utilization-based visualizations such as circulation and interaction types.
@@ -240,7 +206,7 @@
     <div class="spacer"></div>
 
   <div class="flex2-1 rightAlign">
-  <span class="subheader bold">Query Pairing
+  <span class="subheader bold display-font">Query Pairing
 
   <p class="faded">
     The final step for the proof of concept was to establish a method for data querying and pairing them with best-fit visualizations.
@@ -299,29 +265,6 @@
     </div>
 
     <div class="spacer"></div>
-
-    <div class="flex2-container-reversed">
-      <div class="flex2-1-reversed">
-      <span class="subheader bold">Identity
-
-      <p class="faded">
-        While the system is not consumer facing yet, we developed a brand and identity for the product for internal communication as well as presentation to potential investors.
-      </p>
-      </span>
-      </div>
-      <div class="flex2-2-reversed">
-      <img src="../assets/projects/dynamicPlanning/logo.png">
-      </div>
-    </div>
-
-    <div class="spacer"></div>
-
-
-    <h2 class="centerStatement">
-Dynamic Planning is currently in its second phase of development as we partner with beta testers in the higher education planning sector.     </h2>
-    <div class="spacer"></div>
-
-
     <div class='spacer'></div>
 
     </div>

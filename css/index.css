@@ -7,10 +7,11 @@
   src: url("../assets/fonts/FaktPro-Normal.ttf") format("truetype");
   font-weight: Normal;
 }
+
 @font-face {
-  font-family: "FaktPro Semibold";
-  src: url("../assets/fonts/FaktPro-SemiBold.ttf") format("truetype");
-  font-weight: Semibold;
+  font-family: "GT-Sectra-Display Medium Italic";
+  src: url("../assets/fonts/GT-Sectra-Display-Medium-Italic.otf") format("opentype");
+  font-weight: Medium;
 }
 
 html {
@@ -23,22 +24,32 @@ html {
 }
 
 body {
-  color: var(--light-color);
+  color: var(--text-primary-color);
   margin: 65px 15vh;
 }
 
 h1 {
-  font-family: "FaktPro Semibold";
+  font-family: "FaktPro Normal";
+  font-weight: 400;
   font-size: 43px;
-  letter-spacing: 0px;
+  letter-spacing: 0%;
   line-height: 50px;
 }
 
 h2 {
-  font-family: "FaktPro Semibold";
-  font-size: 32px;
+  font-family: "FaktPro Normal";
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0%;
+  line-height: 50px;
+}
+
+h3 {
+  font-family: "FaktPro Normal";
+  font-weight: 400;
+  font-size: 26px;
   letter-spacing: 0px;
-  line-height: 40px;
+  line-height: 35px;
 }
 
 .subheader {
@@ -47,9 +58,27 @@ h2 {
   letter-spacing: 0px;
 }
 
-.bold {
-  font-family: "FaktPro Semibold";
+.display-font{
+  font-family: "GT-Sectra-Display Medium Italic";
 }
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.secondary-color {
+  color: var(--text-secondary-color);
+}
+
+
+.disabled-color {
+  color: var(--text-disabled-color);
+}
+
+
+/* .bold {
+  font-family: "FaktPro Semibold";
+} */
 
 p {
   font-family: "FaktPro Normal";
@@ -59,22 +88,28 @@ p {
 }
 
 .pUnderline {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .faded {
-  opacity: 0.5;
+  color: var(--text-secondary-color);
 }
 
 a {
   color: var(--text-primary-color);
   /* cursor: none; */
   /* cursor: pointer; */
+  border-bottom: 1px solid var(--text-disabled-color);
   text-decoration: none;
 }
 
+p a:hover {
+  color: var(--primary-color);
+}
+
+
 .underline {
-  border-bottom: 2px solid var(--light-color);
+  /* border-bottom: 1px solid var(--text-disabled-color); */
 }
 
 .nav {
@@ -109,7 +144,7 @@ li {
 }
 
 svg {
-  stroke: var(--light-color);
+  stroke: var(--text-primary-color);
 }
 
 /* .cursor {
@@ -126,7 +161,7 @@ svg {
   top: -6px;
   border-radius: 50%;
   z-index: 11000;
-  background: var(--light-color);
+  background: var(--text-primary-color);
 }
 
 .cursor--canvas {
@@ -149,7 +184,7 @@ a.ulink:visited:after {
   bottom: -3px;
   left: 0;
   width: 0%;
-  background: var(--light-color);
+  background: var(--text-primary-color);
   transition: 0.3s;
 }
 
@@ -181,7 +216,8 @@ a.ulink:visited.block {
 }
 
 .tileTitle {
-  font-family: "FaktPro Semibold";
+  font-family: "GT-Sectra-Display Medium Italic";
+  font-weight: 400;
   font-size: 32px;
   letter-spacing: 0px;
   line-height: 50px;
@@ -236,7 +272,7 @@ a.ulink:visited.block {
 }
 
 .tileSubtitle {
-  font-family: "FaktPro Semibold";
+  font-family: "FaktPro Normal";
   font-size: 12px;
   letter-spacing: 1.5px;
   line-height: 70px;
@@ -247,7 +283,7 @@ a.ulink:visited.block {
 
 .tileInfoLeft {
   position: fixed;
-  font-family: "FaktPro Semibold";
+  font-family: "FaktPro Normal";
   font-size: 15px;
   left: calc(100% + 33px);
   bottom: 10px;
@@ -285,7 +321,7 @@ a.ulink:visited.block {
 .progress {
   width: 5px;
   height: 0vh;
-  background: var(--text-primary-color);
+  background: var(--primary-color);
 }
 
 header {
@@ -388,11 +424,11 @@ header {
 }
 
 #nameLogo {
-  font-family: "FaktPro Semibold";
+  font-family: "FaktPro Normal";
 }
 
 #introContainer {
-  padding-top: 17vh;
+  padding-top: 6vh;
 }
 
 #introHeader {
@@ -408,17 +444,17 @@ header {
 }
 
 #intro {
-  width: 70%;
+  width: 60%;
   padding-top: 6vh;
   opacity: 0;
   animation: leftToRight 0.4s forwards;
   animation-timing-function: ease-in;
 }
 
-#introEmail {
+#introContact {
   display: block;
   padding-top: 8vh;
-  text-align: right;
+  text-align: left;
   right: 0px;
   opacity: 0;
   animation: leftToRight 0.4s forwards;
@@ -435,7 +471,7 @@ header {
 }
 
 #workHeader {
-  padding-top: 60px;
+  padding-top: 300px;
   padding-right: 20px;
 }
 
@@ -891,4 +927,4 @@ header {
     padding-bottom: 3px;
     padding-right: 7px;
   }
-}/*# sourceMappingURL=index.css.map */
+}

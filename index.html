@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/indexAnimation.css">
-    <link rel="stylesheet" href="css/canvasDrawing.css">
+    <!-- <link rel="stylesheet" href="css/canvasDrawing.css"> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-core.js"></script>
@@ -28,16 +28,14 @@
     <script src="js/cursor.js" charset="utf-8"></script>
     <script src="js/scrollIndicator.js" charset="utf-8"></script>
     <script src="js/main.js" charset="utf-8"></script>
-    <script src="js/canvasDrawing.js" defer></script>
+    <!-- <script src="js/canvasDrawing.js" defer></script> -->
   </head>
 
   <body>
-    <div class="cursor-toggle-container">
+
+    <!-- <div class="cursor-toggle-container">
     <div class="cursor-toggle-circle" id="cursorToggle"></div>
-    </div>
-    
-        <!-- <div class="cursor cursor--small"></div>
-        <canvas class="cursor cursor--canvas" resize></canvas> -->
+    </div> -->
 
         <header>
           <div class="page-scroll-indicator">
@@ -45,37 +43,21 @@
           </div>
         </header>
 
-    <div class="nav">
-        <a href=#home id="nameLogo">César Neri</a>
-
-      <ul>
-        <li><a class="ulink" href=#infoHeader>Info</a></li>
-        <li><a class="ulink" href="#workHeader">Work</a></li>
-      </ul>
-    </div>
-
     <div id=introContainer>
-
-
-    <span class="subheader" id="introHeader"><a name=#home>Hello</a></span> <svg id="helloLine" height="8" width="70">
-  <line x1="0" y1="0" x2="50" y2="0" style="stroke-width:4" />
 </svg>
+    <h2 class="primary-color display-font">César Neri</h2>
+    <h3 id="intro">
+      Brooklyn–based designer interested in collaborating with teams on complex, data-rich problems that create meaningful impact.
+      <br><br>
+      Currently at <a href="https://www.alcove.io" class="primary-color display-font">Alcove</a> building the software infrastructure to drive carbon removal to the gigaton scale.
+      <br><br>
+      Previously at <a href="https://www.datadog.com" class="primary-color display-font">Datadog</a>, <a href="https://www.ennead.com" class="primary-color display-font">Ennead Architects</a>, and <a href="https://www.sosolimited.com" class="primary-color display-font">Sosolimited</a>.
+    </h3>
 
-    <h1 id="intro">
-      I'm a designer playing somewhere at the intersection of architecture, interaction design, and creative development.
-      <br><br>Guadalajara, MX <img id="helloArrow" src="assets/icons/forward_arrow_white.png" height="15px">  Brooklyn, NY
-    </h1>
-
-    <span class="subheader pUnderline" id="introEmail"><a href="mailto:cesar.a.neri@gmail.com">cesar.a.neri@gmail.com</a></span>
+    <p id="introContact"><a href="mailto:cesar.a.neri@gmail.com" class="secondary-color">Email</a> <span class="disabled-color">/</span> <a href="" class="secondary-color">CV</a><span class="disabled-color">/</span> <a href="" class="secondary-color">LinkedIn</a></p>
     </div>
 
-    <svg id="verticalScrollLine" height="200" width="4">
-  <line x1="0" y1="0" x2="0" y2="200" style="stroke-width:4" />
-</svg>
-
-  <span class="subheader" id="workHeader">Work</span><svg id="workLine" height="8" width="70">
-<line x1="0" y1="0" x2="50" y2="0" style="stroke-width:4" />
-</svg>
+  <h2 class="display-font primary-color" id="workHeader">Work</h2>
 
 <div id="projectTiles">
 
@@ -176,22 +158,6 @@
 </div>
 </a>
 
-</div>
-
-<span class="subheader" id="infoHeader">Info</span><svg id="infoLine" height="8" width="70">
-<line x1="0" y1="0" x2="50" y2="0" style="stroke-width:4" />
-</svg>
-
-
-<div class='infoContent'>
-      <div class='pictureInfo'>
-        <img src='assets/portrait.png'>
-      </div>
-        <div class='infoText subheader'>
-          Hey! I’m a designer and builder of interactions based in Brooklyn, New York. I currently work at <a href="https://www.datadoghq.com/" class="pUnderline">Datadog</a> as Product Designer where I build tools for data-driven investigations, documentation, and story telling. Formerly at the <a href="http://sfpc.io/code-societies/" class="pUnderline">School for Poetic Computation</a>, <a href="http://www.ennead.com/" class="pUnderline">Ennead Architects</a>, <a href="https://www.sosolimited.com/" class="pUnderline">Sosolimited</a>, and Carnegie Mellon University.
-          <br><br>
-  My personal practice is interested in exploring the role of design and technology in the pursuit of decolonizing collective memory and identity in contemporary Latinx culture. Specifically focusing on living Maya cosmologies and ontologies as a way to question our institutionalized values and conceptualizing alternatives.
-      </div>
 </div>
   </body>
 
