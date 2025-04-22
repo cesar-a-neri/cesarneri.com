@@ -242,7 +242,7 @@ a.ulink:visited.block {
   align-items: center;
   gap: 4px; /* space between text and icon */
 
-  top: calc(100% + 40px);
+  top: calc(100% + 28px);
   right: 0px;
   animation: leftToRightFade 0.4s forwards;
   animation-timing-function: ease-in;
@@ -272,6 +272,15 @@ a.ulink:visited.block {
   font-variation-settings: 
     'wght' 300; 
   font-size: 18px;
+  vertical-align: middle;
+  line-height: 1;
+  top: 1px;
+}
+
+.navItem .material-symbols-outlined {
+  font-variation-settings: 
+    'wght' 300; 
+  font-size: 24px;
   vertical-align: middle;
   line-height: 1;
   top: 1px;
@@ -381,29 +390,57 @@ header {
   padding-left: 100px;
 }
 
+#tileUDP{
+  position: relative;
+  width: 55vw;
+  left: 0%;
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+
+
+#tileIMS{
+  position: relative;
+  width: 55vw;
+  left: 30%;
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+
+#tileCoscreen{ 
+  position: relative;
+  width: 35vw;
+  left: 0%;
+  margin-top: 150px;
+  margin-bottom: 180px;
+}
+
+#tileNotebooks{ 
+  position: relative;
+  width: 45vw;
+  left: 40%;
+  margin-top: 150px;
+  margin-bottom: 180px;
+}
+
 #tilePunchingIn {
   position: relative;
   width: 20vw;
-  left: 50%;
+  left: 0%;
   margin-top: 150px;
-  margin-bottom: -200px;
+  margin-bottom: -250px;
 }
 
-#tileDeGenerativeDesign {
-  position: relative;
-  width: 25vw;
-  margin-bottom: -200px;
-}
 
 #tilePhotomicrography {
   position: relative;
   width: 30vw;
-  left: 60%;
+  left: 50%;
   bottom: 70px;
 }
 
 #tile1 {
-  width: 60vw;
+  width: 55vw;
 }
 
 #tile2 {
@@ -414,7 +451,7 @@ header {
 
 #tile3 {
   position: relative;
-  width: 40vw;
+  width: 35vw;
   left: 50%;
 }
 
@@ -426,33 +463,36 @@ header {
 
 #tile5 {
   position: relative;
-  width: 40vw;
+  width: 35vw;
   left: 20%;
   bottom: 370px;
 }
 
 #tile6 {
   position: relative;
-  width: 60vw;
-  bottom: 370px;
-}
-
-#tile7 {
-  position: relative;
-  width: 30vw;
-  left: 60%;
+  left: 40%;
+  width: 45vw;
   bottom: 370px;
 }
 
 #tile8 {
   position: relative;
-  width: 20vw;
-  bottom: 770px;
-  margin-bottom: -370px;
+  width: 15vw;
+  left: 0%;
+  bottom: 700px;
 }
 
 #nameLogo {
-  font-family: "Inter";
+  font-family: "GT-Sectra-Display Medium Italic";
+  font-size: 22px;
+  font-weight: 400;
+  text-decoration: none;
+}
+#nameLogo a {
+  text-decoration: none !important;
+}
+
+#nameLogo a {
   text-decoration: none;
 }
 
@@ -473,7 +513,7 @@ header {
 }
 
 #intro {
-  width: 60%;
+  width: 55%;
   padding-top: 6vh;
   opacity: 0;
   animation: leftToRight 0.4s forwards;
@@ -652,22 +692,64 @@ header {
   #intro {
     width: 100%;
   }
+
+  #tileUDP {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    bottom: 80px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: -20px;
+
+  }
+
+  #tileIMS{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    bottom: 80px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: -20px;
+
+  }
+
+  #tileCoscreen {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    bottom: 80px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: -20px;
+
+  }
+  
+  #tileNotebooks {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: -40px;
+  }
+
   #tilePunchingIn {
     width: 65%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 100px;
-    bottom: 200px;
+    /* bottom: 200px; */
     left: 0px;
     right: 0px;
+    margin-bottom: 80px;
   }
-  #tileDeGenerativeDesign {
-    width: 65%;
-    margin-left: auto;
-    margin-right: auto;
-    top: 0px;
-    margin-bottom: 0px;
-  }
+
   #tilePhotomicrography {
     width: 75%;
     margin-left: auto;
