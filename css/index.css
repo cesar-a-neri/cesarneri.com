@@ -87,10 +87,6 @@ p {
   color: var(--text-primary-color);
 }
 
-.pUnderline {
-  /* text-decoration: underline; */
-}
-
 .faded {
   color: var(--text-secondary-color);
 }
@@ -109,11 +105,6 @@ a:hover {
 
 p a:hover {
   color: var(--primary-color);
-}
-
-
-.underline {
-  /* border-bottom: 1px solid var(--text-disabled-color); */
 }
 
 .nav {
@@ -503,21 +494,11 @@ header {
 #introHeader {
   opacity: 0;
   padding-right: 20px;
-  animation: leftToRight 0.8s forwards;
-}
-
-#helloLine {
-  transform-origin: left;
-  transform: scale(0, 1);
-  animation: growRight 0.4s forwards;
 }
 
 #intro {
   width: 55%;
   padding-top: 6vh;
-  opacity: 0;
-  animation: leftToRight 0.4s forwards;
-  animation-timing-function: ease-in;
 }
 
 #introContact {
@@ -525,18 +506,17 @@ header {
   padding-top: 8vh;
   text-align: left;
   right: 0px;
-  opacity: 0;
-  animation: leftToRight 0.4s forwards;
-  animation-timing-function: ease-in;
 }
 
-#verticalScrollLine {
-  display: block;
-  margin-left: auto;
-  margin-top: 10vh;
-  transform-origin: top;
-  transform: scale(0, 1);
-  animation: growDown 2s forwards;
+#introImage{
+  width: 30%;
+  filter: blur(10px);
+  transition: filter 0.2s ease;
+}
+
+#introImage:hover {
+  filter: blur(0px);
+  cursor: e-resize;
 }
 
 #workHeader {
