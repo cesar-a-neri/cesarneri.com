@@ -203,11 +203,19 @@ a.ulink:visited.block {
 }
 
 .tilt > img {
-  box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+  0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+  0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+
+
 }
 
 .tilt > img:hover {
-  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+  0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+  0px 1px 18px 0px rgba(0, 0, 0, 0.12);
 }
 
 .tileTitle {
@@ -235,7 +243,7 @@ a.ulink:visited.block {
 
   top: calc(100% + 28px);
   right: 0px;
-  animation: leftToRightFade 0.4s forwards;
+  animation: leftToRightFade 0.2s forwards;
   animation-timing-function: ease-in;
 }
 
@@ -246,7 +254,7 @@ a.ulink:visited.block {
   font-size: 15px;
   line-height: 40px;
   left: 0px;
-  animation: leftToRightFade 0.4s forwards;
+  animation: leftToRightFade 0.2s forwards;
   animation-timing-function: ease-in;
 }
 
@@ -489,6 +497,17 @@ header {
 
 #introContainer {
   padding-top: 6vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+  justify-content: center;
+  gap: 10vw;
+  width: 100%; 
+  height: 70vh;
+}
+
+.introObject{
+  /* flex: 1; */
 }
 
 #introHeader {
@@ -497,7 +516,7 @@ header {
 }
 
 #intro {
-  width: 55%;
+  max-width: 700px;
   padding-top: 6vh;
 }
 
@@ -508,8 +527,17 @@ header {
   right: 0px;
 }
 
+#introText{
+  flex: 2;
+}
+
 #introImage{
-  width: 30%;
+  flex:1;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  max-width: 30vw;
+  height: 100%;
   filter: blur(10px);
   transition: filter 0.2s ease;
 }
@@ -550,7 +578,7 @@ header {
     opacity: 1;
   }
   to {
-    transform: translateX(-15px);
+    transform: translateX(-8px);
     opacity: 0;
   }
 }
@@ -671,6 +699,16 @@ header {
   }
   #intro {
     width: 100%;
+  }
+
+  #introContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #introImage{
+    display: none;
   }
 
   #tileUDP {
@@ -845,6 +883,11 @@ header {
   li {
     padding-left: 60px;
   }
+
+  #introImage{
+    display: none;
+  }
+
   .cursor--small {
     display: none;
   }
@@ -914,6 +957,11 @@ header {
   li {
     padding-left: 100px;
   }
+
+  #introImage{
+    display: none;
+  }
+
   .tileTitle {
     font-size: 20px;
     line-height: 22px;

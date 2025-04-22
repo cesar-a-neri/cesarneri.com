@@ -61,7 +61,7 @@ width: 60vw;
   z-index: 100;
 }
 
-.menu > li > a {
+/* .menu > li > a {
   color: var(--text-primary-color);
   display: block;
   text-align: right;
@@ -102,7 +102,7 @@ width: 60vw;
 
 .menu ul a:hover {
   opacity: 1;
-}
+} */
 
 
 #menuExpand{
@@ -120,14 +120,14 @@ width: 60vw;
 }
 
 
-#visitSiteArrow{
+/* #visitSiteArrow{
   transform: translate3d(0px, 0px, 0px);
   transition: transform .35s ease-in-out;
 }
 
 .visitPageText:hover #visitSiteArrow{
    transform: translate3d(12px, 0px, 0px);
-}
+} */
 
 
 .mainContent{
