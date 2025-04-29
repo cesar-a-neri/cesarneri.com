@@ -26,6 +26,7 @@ html {
 body {
   color: var(--text-primary-color);
   margin: 65px 15vh;
+  margin-bottom: 200px;
 }
 
 h1 {
@@ -389,6 +390,10 @@ header {
   padding-left: 100px;
 }
 
+.spacer{
+  height: 5vh;
+}
+
 #tileUDP{
   position: relative;
   width: 55vw;
@@ -463,8 +468,8 @@ header {
 #tile5 {
   position: relative;
   width: 35vw;
-  left: 20%;
-  bottom: 370px;
+  left: 0%;
+  bottom: 0px;
 }
 
 #tile6 {
@@ -667,7 +672,6 @@ header {
   }
   .tileSubtitle {
     font-size: 10px;
-    letter-spacing: 1.5px;
     line-height: 30px;
   }
   .tileInfoLeft {
@@ -901,7 +905,6 @@ header {
   }
   .tileSubtitle {
     font-size: 10px;
-    letter-spacing: 1.5px;
     line-height: 30px;
   }
   .tileInfoLeft {
@@ -969,7 +972,6 @@ header {
   }
   .tileSubtitle {
     font-size: 10px;
-    letter-spacing: 1.5px;
     line-height: 30px;
   }
   .tileInfoLeft {
