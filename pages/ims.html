@@ -12,7 +12,7 @@
 </script>
 
     <meta charset="utf-8">
-    <title>César Neri | Dynamic Planning</title>
+    <title>César Neri | IMS</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
@@ -56,8 +56,9 @@
     <div class="decriptionText">
     <p class="faded">Alcove</p>
     <h1 id="projTitle" class="display-font">Carbon Inventory Management</h1>
-    <br>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    <p>
+      Led the end-to-end design of the product, defining the data model, workflows, and interfaces to help suppliers accurately track carbon credit inventory across projects and time. Worked closely with customers, engineers, and domain experts to translate complex and constantly changing credit accounting rules into a clear, auditable system that supports forecasting, traceability, and compliance.
+    </p>
 
   </div>
 
@@ -66,17 +67,25 @@
     <div class='spacer'></div>
 
     <h3 class="centerStatement display-font">
-      Existing planning practices are outdated in their methods of data gathering. While smart buildings promise increased access to utilization metrics, there’s still a glaring human deficit in the nature of this data. </h3>
+      The Inventory Management System helps carbon removal suppliers track and manage the flow of carbon credits and associated data across projects, facilities, and time.
+
+      It provides a structured, auditable record of when and where carbon was removed, issued, transferred, or sold—enabling accurate reporting, inventory forecasting, and alignment with market and regulatory requirements.
+      
+          </h3>
 
     <div class='spacer'></div>
     <div class='spacer'></div>
 
-    <div class="flex2-1">
+    <div class="flex5050-1">
       <span class="subheader bold display-font">Project and Issuance Creation</span>
   
       <p>
-        Lorem ipsum dolor sit amet consectetur. Fusce a habitasse nibh praesent volutpat at massa turpis elementum. Malesuada congue ac sed volutpat. </p>
+        Users can create projects to store key information such as location, timelines, documents, and metadata. Each project can include two types of credit issuances: forecasted and realized. Forecasted issuances support forward sales but are not valid for fulfillments; their values can change over time, with built-in guardrails to prevent over- or under-selling. Realized issuances require verified data, are less mutable, and can be used to fulfill deliveries.
+      </p>
       </div>
+
+      <div class='spacer'></div>
+
 
     <div class="fullSpanImage">
       <img src="../assets/projects/ims/project-creation.png">
@@ -90,7 +99,8 @@
       <div class="flex2-1-reversed">
       <span class="subheader bold display-font">Inventory Lifecycle
   
-      <p>The industry is trying to move to a more agile approach, where planning decisions are done in a cyclical manner and each stage builds on top of each other. These decisions are driven by insights gained from different stages of the process happening concurrently.</p>
+      <p>
+        The system organizes inventory into different stages—each with tailored rules to reflect the progression of a sale. These lifecycle stages provide guardrails around allocation, allowing greater flexibility in early stages while enforcing stricter controls as commitments are finalized. The fulfillment flow supports partial deliveries across time and multiple issuances, accommodating the complexity of long-term offtake agreements.      </p>
       </span>
       </div>
       <div class="flex2-2-reversed">
@@ -106,7 +116,8 @@
       <div class="flex2-1">
       <span class="subheader bold display-font">Customer Management
   
-      <p>Most planning practices currently implement a waterfall planning arc where a project is completed in linear, distinct stages and changes in the original plan are difficult to accommodate. For this approach to be successful, a team needs to have a vast amount of data about the project from the start, which is often not the case.</p>
+      <p>
+        Suppliers can notify buyers when an order is confirmed or fulfilled, granting them access to a customer portal where they can view their credit portfolio and receive updates on associated projects. The platform also supports payment and invoicing workflows, including the ability to generate QuickBooks invoices directly within Alcove. This integration enables suppliers to track payment status and align credit fulfillment accordingly.      </p>
       </span>
       </div>
       <div class="flex2-2">
@@ -122,7 +133,7 @@
       <span class="subheader bold display-font">Dashboards</span>
   
       <p>
-        Lorem ipsum dolor sit amet consectetur. Fusce a habitasse nibh praesent volutpat at massa turpis elementum. Malesuada congue ac sed volutpat. </p>
+        Dashboards serve as the primary surface for monitoring credit inventory, project activity, and order status across the platform. They provide both high-level overviews and project-specific insights, helping suppliers stay on top of key metrics. Custom visualizations were developed to track inventory movement across the credit lifecycle, while built-in alerts highlight issues like overallocation, overdue payments, and unfulfilled deliveries.      </p>
       </div>
 
       <div class='spacer'></div>
@@ -135,12 +146,11 @@
       <div class='spacer'></div>
       <div class='spacer'></div>
 
-      <div class="flex2-1 rightAlign">
+      <div class="flex5050-1 rightAlign">
         <span class="subheader bold display-font">Reports
       
         <p>
-          The final step for the proof of concept was to establish a method for data querying and pairing them with best-fit visualizations.
-        </p>
+          Reports were developed in close collaboration with customers who previously relied on manual processes. Key reports like the Sale Status Report and Buyer Report offer filtered views into project and customer performance, helping suppliers track progress across their portfolio. With built-in date range selectors, the platform also surfaces trends over time, enabling teams to monitor sales velocity and assess performance against annual KPIs.        </p>
         </span>
         </div>
 
