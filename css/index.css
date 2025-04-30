@@ -219,6 +219,7 @@ a.ulink:visited.block {
   0px 1px 18px 0px rgba(0, 0, 0, 0.12);
 }
 
+
 .tileTitle {
   font-family: "GT-Sectra-Display Medium Italic";
   font-weight: 400;
@@ -407,7 +408,7 @@ header {
 }
 
 .hoverAnimate:hover {
-  transform: translateY(-16px);
+  transform: translateY(-8px) scale(1.005);
 }
 
 #tileIMS{
@@ -1079,3 +1080,4 @@ header {
     padding-right: 7px;
   }
 }
+
