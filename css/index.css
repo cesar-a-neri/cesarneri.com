@@ -501,15 +501,17 @@ header {
   text-decoration: none !important;
   border-bottom: none !important;
 }
-#nameLogo a {
-  text-decoration: none !important;
-  border-bottom: none !important;
-}
 
 #nameLogo a {
   text-decoration: none !important;
   border-bottom: none !important;
 }
+
+.tilt a {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
 
 #introContainer {
   padding-top: 6vh;
@@ -584,7 +586,7 @@ header {
 
 #bottomCenteredImage {
   position: fixed;
-  bottom: -100px;
+  bottom: -80px;
   left: 50%;
   width: 36px;
   height: 36px;
