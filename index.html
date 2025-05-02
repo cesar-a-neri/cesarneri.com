@@ -21,14 +21,13 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/indexAnimation.css">
     <link rel="stylesheet" href="css/projectPageAnimation.css">
-    <link rel="stylesheet" href="css/smile-cursor.css">
+    <link rel="stylesheet" href="css/sticker-canvas.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
     <script src="js/scrollIndicator.js" charset="utf-8"></script>
     <script src="js/main.js" charset="utf-8"></script>
-    <!-- <script src="js/carousel.js"></script> -->
-    <script src="js/smile-cursor.js"></script>
+    <script src="js/sticker-canvas.js"></script>
   </head>
 
   <body>
@@ -40,9 +39,14 @@
     </header>
 
     <div class="mainContent">
+      
+      <img id="smileToggle" src="assets/smiles/orange-smile.png" alt="Smile Toggle">
 
+      <!-- <img src="assets/smiles/orange-smile.png" id="topRightImage"> -->
 
-      <img src="assets/smiles/orange-smile.png" id="topRightImage">
+      <div class="canvas-container">
+        <canvas id="stickerCanvas"></canvas>
+    </div>
     
 
 
@@ -70,7 +74,6 @@
 <div id="projectTiles">
 
   <a href="pages/udp.html">
-    <!-- <div id="tileUDP" class="tilt exitClick" data-tilt data-tilt-scale="1.02" data-tilt-max="2" data-tilt-reset="true" data-tilt-speed="800"> -->
     <div id="tileUDP" class="tilt hoverAnimate exitClick">
 
       <img src="assets/projects/tiles/udp.png" width="100%" height="100%">
@@ -224,9 +227,11 @@
 
 </div>
 
-<div id="bottomCenteredImage">
+<img id="bottomSmileToggle" src="assets/smiles/orange-smile.png" alt="Bottom Smile Toggle">
+
+<!-- <div id="bottomCenteredImage">
   <img src="assets/smiles/orange-smile.png" height="36px" width="36px">
-</div>
+</div> -->
 
 </div>
 
