@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139825554-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -23,11 +21,8 @@
     <link rel="stylesheet" href="../css/carousel.css">
     <link rel="stylesheet" href="../css/index.css">
 
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="9869e8d3-1286-45b8-b4a9-4e71055143ef"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-core.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
-    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
-    <script src="../js/cursor.js" charset="utf-8"></script>
     <script src="../js/scrollIndicator.js" charset="utf-8"></script>
     <script src="../js/carousel.js"></script>
     <script src="../js/main.js" charset="utf-8"></script>
@@ -66,22 +61,25 @@
 
     <div class='spacer'></div>
 
-    <h3 class="centerStatement display-font">
-      The Inventory Management System helps carbon removal suppliers track and manage the flow of carbon credits and associated data across projects, facilities, and time.
-
-      It provides a structured, auditable record of when and where carbon was removed, issued, transferred, or sold.
-      
-          </h3>
+    <h3 class="centerStatement display-font bordered-section">
+      <span class="subheader bold display-font">Problem</span>
+  
+      <p>
+        Carbon removal suppliers need a reliable way to manage their credit inventory from day one. Spreadsheets are a common starting point, but even early on, they make it nearly impossible to track changes across forecasted supply, realized issuances, spot purchases, and forward sales.
+        <br><br>
+        Without a system purpose-built for the complexities of carbon removal, sales, operations, and compliance quickly fall out of sync. This creates friction across teams, limits visibility, and makes operations difficult to scale.
+      </p>
+      </div>
+    </h3>
 
     <div class='spacer'></div>
     <div class='spacer'></div>
 
     <div class="flex5050-1">
-      <span class="subheader bold display-font">Project and Issuance Creation</span>
+      <span class="subheader bold display-font">Managing Inventories</span>
   
       <p>
-        Users can create projects to store key information such as location, timelines, documents, and metadata. Each project can include two types of credit issuances: forecasted and realized. Forecasted issuances support forward sales but are not valid for fulfillments; their values can change over time, with built-in guardrails to prevent over- or under-selling. Realized issuances require verified data, are less mutable, and can be used to fulfill deliveries.
-      </p>
+      The system is designed with project inventories at the core, since that’s how suppliers naturally think about and organize their credits. Each project stores key details like methodologies, locations, and partners, making it easier to keep everything connected and audit-ready. We decided to split inventories into two states, Forecasted and Issued, to give users more flexibility early on, and introduce stricter guardrails as credits are formally issued. The inventory page provides a clear, editable view of overall supply, while letting users dive into the details of each issuance when needed.      </p>
       </div>
 
       <div class='spacer'></div>
@@ -100,7 +98,7 @@
       <span class="subheader bold display-font">Inventory Lifecycle
   
       <p>
-        The system organizes inventory into different stages—each with tailored rules to reflect the progression of a sale. These lifecycle stages provide guardrails around allocation, allowing greater flexibility in early stages while enforcing stricter controls as commitments are finalized. The fulfillment flow supports partial deliveries across time and multiple issuances, accommodating the complexity of long-term offtake agreements.      </p>
+      We introduced a structured credit lifecycle to help suppliers track where each credit sits in the sales process. After speaking with dozens of organizations, we identified a common set of stages that map to how teams actually move inventory through sales and fulfillment. While the stages themselves are fixed, each one supports custom statuses so teams can adapt the system to their specific workflows. Most importantly, each stage has its own guardrails. Unconfirmed orders are flexible and easy to adjust, while fulfilled orders are locked down.      </p>
       </span>
       </div>
       <div class="flex2-2-reversed">
@@ -117,7 +115,7 @@
       <span class="subheader bold display-font">Customer Management
   
       <p>
-        Suppliers can notify buyers when an order is confirmed or fulfilled, granting them access to a customer portal where they can view their credit portfolio and receive updates on associated projects. The platform also supports payment and invoicing workflows, including the ability to generate QuickBooks invoices directly within Alcove. This integration enables suppliers to track payment status and align credit fulfillment accordingly.      </p>
+      From early conversations with users, it was clear that maintaining clear, ongoing communication with buyers was a major challenge, especially for multi-year contracts with frequent updates. To reduce the overhead, we built automated notifications into the order and fulfillment flow, and created a branded portal where buyers can track their portfolios and deliveries. We also integrated with QuickBooks so invoicing and payment tracking happen automatically, keeping finance in sync without extra manual work.      </p>
       </span>
       </div>
       <div class="flex2-2">
@@ -133,7 +131,7 @@
       <span class="subheader bold display-font">Dashboards</span>
   
       <p>
-        Dashboards serve as the primary surface for monitoring credit inventory, project activity, and order status across the platform. They provide both high-level overviews and project-specific insights, helping suppliers stay on top of key metrics. Custom visualizations were developed to track inventory movement across the credit lifecycle, while built-in alerts highlight issues like overallocation, overdue payments, and unfulfilled deliveries.      </p>
+      Dashboards are the main surface users interact with and sit at the core of the system. We designed them to show how credits move through the lifecycle across projects, while also surfacing issues like over-allocations and overdue payments or deliveries. These views help sales and ops teams stay aligned, spot problems early, and make faster, more informed decisions—without digging through spreadsheets.      </p>
       </div>
 
       <div class='spacer'></div>
@@ -147,11 +145,11 @@
       <div class='spacer'></div>
 
       <div class="flex5050-1 rightAlign">
-        <span class="subheader bold display-font">Reports
+        <span class="subheader bold display-font">Reports</span>
       
         <p>
-          Reports were developed in close collaboration with customers who previously relied on manual processes. Key reports like the Sale Status Report and Buyer Report offer filtered views into project and customer performance, helping suppliers track progress across their portfolio. With built-in date range selectors, the platform also surfaces trends over time, enabling teams to monitor sales velocity and assess performance against annual KPIs.        </p>
-        </span>
+        We worked closely with users who were manually pulling data into spreadsheets and slide decks every single week to build reports that actually saved them time. Each report is purpose-built to answer specific questions—like how much has been sold, to whom, and how sales are trending over time. Users can apply filters and date ranges to track progress against targets or pull snapshots for stakeholders. Instead of exporting and rebuilding the same views over and over, they now have a reliable, up-to-date source of truth.
+        </p>
         </div>
 
         <div class="fullSpanImage">
@@ -161,6 +159,19 @@
 
     </div>
 
+  <div class='spacer'></div>
+  <div class='spacer'></div>
+
+  <h3 class="centerStatement display-font bordered-section">
+      <span class="subheader bold display-font">Impact</span>
+  
+      <p>
+        The system now houses over 50 million tons of carbon and is used by some of the leading suppliers in the industry, those with the most projects and the most operational complexity. For teams previously relying on spreadsheets, it’s saved hours of manual work each week. For others, it’s eliminated the need to build and maintain costly custom systems. Most importantly, it’s allowed suppliers to focus on removing carbon, not wrangling data.
+      </p>
+      </div>
+          </h3>
+
+  <div class='spacer'></div>
   <div class='spacer'></div>
 
   

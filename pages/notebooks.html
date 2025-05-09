@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139825554-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -23,15 +21,15 @@
     <link rel="stylesheet" href="../css/carousel.css">
     <link rel="stylesheet" href="../css/index.css">
 
+
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="9869e8d3-1286-45b8-b4a9-4e71055143ef"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-core.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
-    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
-    <script src="../js/cursor.js" charset="utf-8"></script>
     <script src="../js/scrollIndicator.js" charset="utf-8"></script>
     <script src="../js/carousel.js"></script>
     <script src="../js/main.js" charset="utf-8"></script>
     <script src="../js/loadNav.js" charset="utf-8"></script>
+
+
 
   </head>
 
@@ -64,18 +62,26 @@
 
   <div class='spacer'></div>
 
-  <h3 class="centerStatement display-font">
-    Notebooks are collaborative text editors within Datadog that allow users to combine written content with live monitoring data. They’re used to document investigations, postmortems, and runbooks, enabling teams to analyze incidents and share context directly within a single document.
-  </h3>
+    <h3 class="centerStatement display-font bordered-section">
+      <span class="subheader bold display-font">Problem</span>
+  
+      <p>
+        Engineering teams often rely on screenshots, Slack threads, and scattered documents to investigate incidents and share findings. These workflows make it hard to combine live data with human context, and nearly impossible to reconstruct decisions after the fact. Even within monitoring platforms, there's often no clear place to collaborate, document investigations, or hand off work across teams. As a result, valuable insights get lost, and incident timelines stretch longer than they should.
+      </p>
+      </div>
+    </h3>
+
+
+  <div class='spacer'></div>
   <div class='spacer'></div>
   <div class='spacer'></div>
 
   <div class="flex2-container">
     <div class="flex2-1">
-    <span class="subheader bold display-font">Get Started
+    <span class="subheader bold display-font">Onboarding
 
     <p>
-      A new landing page for organizations new to Notebooks, offering clear entry points through templates for common use cases like postmortems, gamedays, and exploratory investigations. The layout emphasized approachability and actionability, using a fresh, colorful design that later served as a model for onboarding pages across the platform.
+    We fully redesigned and modernized Notebooks, starting with the landing experience. For teams new to the product, we focused on making the entry point feel clear, approachable, and useful from day one. Rather than drop users into a blank page, we introduced a landing view with templates for common use cases like postmortems, gamedays, and exploratory investigations. The layout emphasized actionability and clarity, using a fresh, colorful design that later informed onboarding patterns across the platform.
     </p>
     </span>
     </div>
@@ -91,10 +97,10 @@
 
   <div class="flex2-container-reversed">
     <div class="flex2-1-reversed">
-    <span class="subheader bold display-font">List Page
+    <span class="subheader bold display-font">Organizing Notebooks
 
     <p>
-      A redesigned Notebooks list page to improve discoverability and onboarding. New filtering options by type and owner made it easier to navigate large volumes of content, while a “Suggested” section highlighted frequently used notebooks and offered guidance for new users. A template gallery was also introduced to help teams quickly start new documents based on common use cases.
+      Organizations could have thousands of Notebooks, making it difficult to find the right one quickly, especially for new users. The original list page was overwhelming at large scale, and titles alone often weren’t descriptive enough to convey a Notebook’s purpose. We redesigned the page to support both power users and newcomers by introducing Notebook “types,” a preview option, starring, and flexible filtering by owner, type, and recency. We also added a “Suggested” section to surface high-signal content and a template gallery to help users get started with common workflows.
     </p>
     </span>
     </div>
@@ -109,12 +115,14 @@
   <div class='spacer'></div>
 
   <div class="centerStatement">
-    <span class="subheader bold display-font">Collaborative Interface</span>
+    <span class="subheader bold display-font">Building for Collaboration</span>
 
     <p>
-      We modernized the Notebooks editor with a cleaner interface to support faster collaboration and adoption. Introduced real-time multiplayer editing and commenting—critical features for workflows like postmortems and investigations. Additional enhancements included graph snapshotting, a table of contents, drag-and-drop cell reordering, and improved time mutability controls for working with historical data.    
+    To support live investigations and postmortems, Notebooks needed to move beyond static editing. We introduced real-time multiplayer and commenting to keep teams aligned in one place. A cleaner interface, plus features like snapshotting, drag-and-drop cells, and time controls, made it easier to write, analyze, and collaborate without leaving the tool.
     </p>
     </div>
+
+  <div class='spacer'></div>
 
     <div class="fullSpanImage">
       <img src="../assets/projects/notebooks/notebook-interface.png">
@@ -129,12 +137,15 @@
       <span class="subheader bold display-font">Markdown Editor
   
       <p>
-        Designed and implemented a new Markdown editor component to be used across the platform, offering a flexible alternative to a WYSIWYG editor within engineering constraints. The interface included toggle controls for edit and preview modes, along with inline autocompletion to reduce reliance on Markdown syntax memorization.
+      With text editing at the core of Notebooks, we focused on modernizing the Markdown editor used throughout the app. The previous editor was minimal, so we focused on improving formatting behaviors and interaction patterns to make writing feel smoother and more intuitive. We also added edit/preview modes and inline autocompletion to reduce friction for users less familiar with Markdown.
       </p>
       </span>
       </div>
       <div class="flex2-2">
-      <img src="../assets/projects/notebooks/markdown-editor.png">
+        <video id="markdown-video" autoplay muted loop>
+          <source src="../assets/projects/notebooks/markdown-demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   
@@ -148,23 +159,54 @@
       <span class="subheader bold display-font">Template Variables
   
       <p>
-        Template variables allow users to dynamically filter one or more widgets within a dashboard and create saved views for navigating visualizations via dropdown selections. Usability improvements included clearer controls for selecting all, deselecting all, or isolating a single option. The component was also restyled to make active filters more visible, improving clarity and reducing user error.
+      Template variables are used throughout the most active parts of the app, including Notebooks and Dashboards, to filter data and create saved views. As usage grew, we introduced several quality-of-life improvements—clearer controls for selecting and isolating options, easier ways to reset filters, and a visual redesign to make active selections more obvious. These updates helped reduce errors and made the component easier to use at scale.
       </p>
       </span>
       </div>
-      <div class="flex2-2-reversed">
-      <img src="../assets/projects/notebooks/template-variables.png">
+      <div class="flex2-2-reversed" id="tvar-demo">
+        <video id="tvar-video" autoplay muted loop>
+          <source src="../assets/projects/notebooks/tvar-demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
 
     <div class="spacer"></div>
     <div class="spacer"></div>
-    <div class='spacer'></div>
+
+    <h3 class="centerStatement display-font bordered-section">
+      <span class="subheader bold display-font">Impact</span>
+  
+      <p>
+        The redesign of Notebooks turned it into a core workflow tool across incident response, infrastructure analysis, and collaborative postmortems. During the span of these improvements, the number of daily organizations using the tool more than doubled. In larger orgs, features like real-time editing, searchability, and structured documentation made the tool far more usable at scale. Several design patterns introduced through this work were later adopted across the platform, contributing to a more consistent and modernized product experience.
+      </p>
+      </div>
+    </h3>
+
+
+    <div class="spacer"></div>
+    <div class="spacer"></div>
 
   </div>
 
   
     </div>
 
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        const markdownvideo = document.getElementById("markdown-video");
+        markdownvideo.playbackRate = 1.75;
+      });
+
+      window.addEventListener('DOMContentLoaded', () => {
+        const tvarvideo = document.getElementById("tvar-video");
+        tvarvideo.playbackRate = 1.75;
+      });
+
+      </script>
+
   </body>
+
+
+
 </html>

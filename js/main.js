@@ -8,6 +8,7 @@ $('.exitClick').on("click",function(){
   $("body").addClass("bodyExit");
 });
 
+
 // $('.bodyExitClick').on("click",function(){
 //   $("body").addClass("bodyExit");
 //   console.log('bodyExiting');

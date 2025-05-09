@@ -105,11 +105,38 @@ width: 60vw;
 }
 
 .flex2-2 > video{
-    width: 85%;
+    width: 70%;
 }
 
 .fullSpanImage > img{
     width: 100%;
+}
+
+.halfSpanImage{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.halfSpanImage > video{
+  width: 60%;
+}
+
+.halfSpanImage > img{
+  width: 60%;
+}
+
+#tvar-demo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tvar-demo > video{
+  margin-right: 200px;
+  width: 50%;
+
 }
 
 .flex2-container-reversed{
@@ -187,6 +214,33 @@ width: 60vw;
   margin-right: auto;
   padding: 20px;
 }
+
+.bordered-section {
+  position: relative;
+  padding: 2rem 1rem;
+  text-align: left;
+}
+
+.bordered-section::before,
+.bordered-section::after{
+  content: "";
+  display: block;
+  width: 70px;
+  height: 1px;
+  background-color: var(--text-disabled-color); /* Adjust color to match design */
+}
+
+.bordered-section::before {
+  margin-bottom: 3rem;
+  margin-left: 0;
+}
+
+.bordered-section::after {
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: 0;
+}
+
 
 
 .flex3-container{
@@ -295,6 +349,14 @@ width: 60vw;
     width: 100%;
   }
 
+    .flex2-2 > video{
+    width: 80%;
+  }
+
+  .halfSpanImage > video{
+  width: 80%;
+}
+
   .flex2-container-reversed{
     display: block;
 
@@ -353,6 +415,12 @@ width: 60vw;
     padding-left: 0px;
     padding-right: 0px;
     width: 100%;
+  }
+
+  #tvar-demo > video{
+    margin-right: 0px;
+    width: 70%;
+  
   }
 
 }
@@ -479,6 +547,10 @@ width: 60vw;
       padding: 0px;
     }
 
+  .halfSpanImage > video{
+  width: 80%;
+}
+
     .flex3-container{
         display: block;
         padding: 0px;
@@ -497,6 +569,12 @@ width: 60vw;
       padding-left: 0px;
       padding-right: 0px;
       width: 100%;
+    }
+
+    #tvar-demo > video{
+      margin-right: 0px;
+      width: 70%;
+    
     }
 
 }

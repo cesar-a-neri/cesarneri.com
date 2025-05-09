@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139825554-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -23,11 +21,8 @@
     <link rel="stylesheet" href="../css/carousel.css">
     <link rel="stylesheet" href="../css/index.css">
 
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="9869e8d3-1286-45b8-b4a9-4e71055143ef"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-core.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
-    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
-    <script src="../js/cursor.js" charset="utf-8"></script>
     <script src="../js/scrollIndicator.js" charset="utf-8"></script>
     <script src="../js/carousel.js"></script>
     <script src="../js/main.js" charset="utf-8"></script>
@@ -68,72 +63,96 @@
     <div class="spacer"></div>
     <div class="spacer"></div>
 
-
-    <div class="flex5050-1">
-      <span class="subheader bold display-font">Web Application</span>
+    <h3 class="centerStatement display-font bordered-section">
+      <span class="subheader bold display-font">Problem</span>
   
       <p>
-        Designed and implemented a fully responsive web version of the CoScreen app to remove friction during time-sensitive workflows like incident response. By eliminating the need to install software or grant permissions for basic functionality, the web app enabled immediate access and faster collaboration. It also extended support to mobile browsers, making CoScreen one of the first parts of the Datadog platform accessible on mobile.      </p>
+      CoScreen set out to fix what traditional screen sharing tools get wrong: slow, rigid experiences that don’t support real-time collaboration for engineers. After the Datadog acquisition, the challenge became integrating CoScreen into the broader platform and delivering the features needed to support high-pressure workflows like incident response.
+      </p>
       </div>
+    </h3>
 
-      <div class="flex5050-container">
-        <div class="flex5050-1">
-        <img src="../assets/projects/coscreen/web-app-1.png">
-        </div>
-        <div class="flex5050-2">
-        <img src="../assets/projects/coscreen/web-app-1.png">
-        </div>
-      </div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+    <div class="halfSpanImage">
+        <video autoplay muted loop>
+          <source id="coscreen-video" src="../assets/projects/coscreen/coscreen-demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
 
 
-      <div class="flex5050-container">
-        <div class="flex5050-1">
-        <img src="../assets/projects/coscreen/web-app-3.png">
-        </div>
-        <div class="flex5050-2">
-        <img src="../assets/projects/coscreen/web-app-4.png">
-        </div>
-      </div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
 
-      <div class="flex5050-container">
-        <div class="flex5050-1">
-        <img src="../assets/projects/coscreen/web-app-5.png">
-        </div>
-        <div class="flex5050-2">
-        <img src="../assets/projects/coscreen/web-app-6.png">
-        </div>
-      </div>
+      <div class="flex2-container">
+    <div class="flex2-1">
+    <span class="subheader bold display-font">Designing for Urgency</span>
 
-      <div class="flex5050-container">
-        <div class="flex5050-1">
-        <img src="../assets/projects/coscreen/web-app-mobile-1.png">
-        </div>
-        <div class="flex5050-2">
-        <img src="../assets/projects/coscreen/web-app-mobile-2.png">
-        </div>
-      </div>
+    <p>
+    To make CoScreen viable during incident response, we needed to remove as much friction as possible. Requiring users to download software or grant permissions slowed things down when speed mattered most. We designed a fully responsive web version of the app to enable instant access—no install needed. This also allowed us to support mobile browsers, making CoScreen one of the first parts of the Datadog platform usable on mobile and extending its reach to on-call engineers working across devices.
+    </p>
+    </div>
+    <div class="flex2-2">
+    <img src="../assets/projects/coscreen/web-app-hero.png">
+    </div>
+  </div>
 
       <div class="spacer"></div>
       <div class="spacer"></div>
 
-      <div class="flex5050-1 rightAlign">
-        <span class="subheader bold display-font">Platform Integration
-    
+      <div class="flex2-container-reversed">
+    <div class="flex2-1-reversed">
+    <span class="subheader bold display-font">Integrating with Core Workflows</span>
+
         <p>
-          Developed two key integrations to bring CoScreen into the broader Datadog ecosystem: one within the Incident Response product and another through the Slack integration. The Incident Response feature enabled users to instantly spin up a CoScreen room for real-time collaboration during active investigations. The Slack integration made it easy to attach CoScreen links to channels or messages, allowing teams to quickly transition from chat to live conversation.    
+CoScreen needed to work seamlessly with the tools engineers were already using. We integrated it into Datadog’s Incident Response product, making it possible to launch a room with a single click during an investigation. A second integration with Slack allowed users to share CoScreen links directly in channels or messages, helping teams move quickly from chat to live collaboration.
         </p>
 
-        <div class="spacer"></div>
-        </span>
-        </div>
+    </div>
+    <div class="flex2-2-reversed">
+    <img src="../assets/projects/coscreen/incidents-integration.png">
+    </div>
+  </div>
 
-        <div class="spacer"></div>
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+      <div class="spacer"></div>
 
+        <div class="flex2-container">
+    <div class="flex2-1">
+    <span class="subheader bold display-font">Upgrading the Tool Palette</span>
 
-        <div class="fullSpanImage">
-          <img src="../assets/projects/coscreen/platform-integration.png">
-      
-        </div>
+    <p>
+    As we introduced new features like the drawing tool, we needed to redesign how users interacted with shared windows. We added a tools palette that let users toggle between controlling and drawing, making the distinction explicit. This also addressed a common issue: many users didn’t realize they could control others’ windows, leading to accidental clicks and disruptions. The new UI made those modes clearer and gave users more control over how they interacted during a session.
+    </p>
+    </div>
+    <div class="flex2-2">
+    <video autoplay muted loop>
+          <source id="coscreen-video" src="../assets/projects/coscreen/updated-controls.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
+  </div>
+    
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+
+    <h3 class="centerStatement display-font bordered-section">
+      <span class="subheader bold display-font">Impact</span>
+  
+      <p>
+        CoScreen became the default screen sharing tool at Datadog, used both in daily workflows and during incidents. The redesign reduced user error, improved usability, and made it easier to collaborate without switching tools. Today, it’s used by hundreds of organizations across engineering teams.
+      </p>
+      </div>
+    </h3>
+
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+
       
 
     </div>

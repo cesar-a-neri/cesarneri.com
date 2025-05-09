@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139825554-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -23,11 +21,8 @@
     <link rel="stylesheet" href="../css/carousel.css">
     <link rel="stylesheet" href="../css/index.css">
 
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="9869e8d3-1286-45b8-b4a9-4e71055143ef"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-core.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
-    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
-    <script src="../js/cursor.js" charset="utf-8"></script>
     <script src="../js/scrollIndicator.js" charset="utf-8"></script>
     <script src="../js/carousel.js"></script>
     <script src="../js/main.js" charset="utf-8"></script>
@@ -65,8 +60,13 @@
 
   <div class='spacer'></div>
 
-  <h3 class="centerStatement display-font">
-    The Carbon Compliance Platform helps carbon removal suppliers manage audit-ready data, calculate lifecycle emissions, and streamline compliance with carbon credit registries like Puro and Isometric.
+    <h3 class="centerStatement display-font bordered-section">
+      <span class="subheader bold display-font">Problem</span>
+  
+      <p>
+      Carbon removal project developers are asked to manage an enormous amount of scientific and operational complexity with limited tools. Every new project requires interpreting evolving methodologies, coordinating across labs, devices, and teams, and manually collecting fragmented data, often using spreadsheets and email. These workflows are not only error-prone, they slow down audits, stall credit issuance, and jeopardize project timelines. Without a system built to handle compliance at scale, developers risk falling out of step with registry requirements and missing critical opportunities to commercialize their credits.
+      </p>
+      </div>
     </h3>
 
   <div class='spacer'></div>
@@ -76,16 +76,12 @@
     <span class="subheader bold display-font">Framework and Document Management</span>
 
     <p>
-      Data frameworks are structured methodology requirements made up of Principles, Sections, Controls, and Documents. This structure guides suppliers through the data submission process. Within each document, users can upload or input data from a variety of sources—including files, direct values, sensor feeds, or APIs. Documents can be assigned to team members and collaboratively reviewed before submission, providing clarity and accountability throughout the data collection phase.    </p>
+      We built the platform to be flexible from the very beginning, knowing registry requirements would keep changing. We conceptualized compliance frameworks as digitized versions of registry requirements, not static templates. Each document has dynamic fields that adjust based on the supplier’s tech stack and instruments. They also have built-in task management with due dates and assignees helps teams stay aligned and accountable.
+    </p>
     </div>
 
-    <div class="flex5050-container">
-      <div class="flex5050-1">
-      <img src="../assets/projects/udp/admin-homepage.png">
-      </div>
-      <div class="flex5050-2">
-      <img src="../assets/projects/udp/document-view.png">
-      </div>
+    <div class="fullSpanImage">
+      <img src="../assets/projects/udp/framework-document.png">
     </div>
 
     <div class="spacer"></div>
@@ -93,32 +89,21 @@
     <div class='spacer'></div>
 
     <div class="flex5050-1 rightAlign">
-      <span class="subheader bold display-font">Lifecycle Analysis
+      <span class="subheader bold display-font">Calculating Emissions
     
       <p>
-        Each data framework connects to a Lifecycle Analysis (LCA) model that automatically aggregates emissions and removals across the carbon removal process. The platform supports both default and custom frameworks, giving users the flexibility to define variables, configure formulas, and adjust assumptions based on their project-specific methodologies. This system outputs an estimated Net Removal value, which forms the basis for carbon credit issuance upon audit approval.
-     </p>
+        Designing the LCA was one of the harder problems we had to solve. With a dynamic data model, where inputs could come from sensors, labs, or stakeholders and change over time, we needed a system that could stay accurate without being rebuilt every time. On top of that, it had to remain compliant with the requirements of each registry.
+        <br><br>
+        We built in support for formula editing, constant emission factors, and structured each emission line item to match the reporting format of the relevant registry. 
+      </p>
       </span>
       </div>
     
     
-      <div class="flex5050-container">
-        <div class="flex5050-1">
-        <img src="../assets/projects/udp/lca-page.png">
-        </div>
-        <div class="flex5050-2">
-        <img src="../assets/projects/udp/lca-field.png">
-        </div>
-      </div>
-    
-      <div class="flex5050-container">
-        <div class="flex5050-1">
-        <img src="../assets/projects/udp/facility-emissions.png">
-        </div>
-        <div class="flex5050-2">
-        <img src="../assets/projects/udp/lca-modals.png">
-        </div>
-      </div>
+    <div class="fullSpanImage">
+      <img src="../assets/projects/udp/lca.png">
+    </div>
+
 
   <div class="spacer"></div>
   <div class="spacer"></div>
@@ -129,7 +114,8 @@
     <span class="subheader bold display-font">QA / QC
 
     <p>
-      To reduce human error and improve data quality, the platform includes built-in quality assurance features. Organizations can set expected ranges for input values using minimum and maximum thresholds. The system also flags outliers by comparing inputs to historical data, helping reviewers catch anomalies early and standardize the review process across large datasets.    </p>
+      To reduce human error and improve data quality, we built quality checks directly into the data entry process. Teams can set minimum and maximum thresholds for expected values, and the system flags outliers by comparing new inputs against historical data. This would help reviewers catch anomalies early and makes it easier to standardize reviews across large datasets.
+    </p>
     </span>
     </div>
     <div class="flex2-2">
@@ -146,7 +132,8 @@
     <span class="subheader bold display-font">Audit Experience
 
     <p>
-      The platform includes a dedicated audit interface for registries and third-party verifiers. Instead of relying on email threads and spreadsheets, verifiers can directly access submitted documents, approve or flag items, and collaborate with suppliers in a structured review workflow. This streamlined experience reduces audit timelines and increases transparency and trust across the verification process.    </p>
+    For the platform to work end-to-end, registries and third-party verifiers needed to be part of the system. After extensive conversations with both, it was clear they welcomed a change from their current email-based workflows. We designed a shared audit space where suppliers and verifiers could review data and resolve questions in real time, all within the same interface. Having communication happen alongside the data itself drastically reduced confusion, shortened review cycles, and replaced weeks of back-and-forth with a more focused, transparent process.
+    </p>
     </span>
     </div>
     <div class="flex2-2-reversed">
@@ -154,6 +141,18 @@
     </div>
   </div>
 
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+
+    <h3 class="centerStatement display-font bordered-section">
+      <span class="subheader bold display-font">Impact</span>
+  
+      <p>
+      The platform is now used by the highest-volume suppliers in carbon removal. Methodology requirements are no longer buried in PDFs but surfaced through a living interface built in partnership with registries. Suppliers now submit audits up to 10x faster, and the largest registries in the space have fully adopted the tool as its primary audit review system. By alleviating one of the biggest bottlenecks in carbon removal, the platform accelerates progress toward gigaton-scale deployment—critical for meeting global climate goals. In less than three years, it’s become the core compliance infrastructure for the industry’s most complex projects.
+      </p>
+      </div>
+    </h3>
+  
   <div class="spacer"></div>
   <div class="spacer"></div>
 
