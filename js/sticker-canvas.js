@@ -10,6 +10,7 @@ const smileImages = [
 const preloadedImages = [];
 
 let currentImageIndex = 0;
+let smileMode = false;
 let isDrawing = false;
 let canvas, ctx, cursorFollower;
 
@@ -67,14 +68,15 @@ function setupCursorFollower() {
     document.body.appendChild(cursorFollower);
 
     document.addEventListener('mousemove', (e) => {
-        if (!isDrawing) return;
-        
-        cursorFollower.style.display = 'block';
+        if (!smileMode) return;
+
+        currentRotation = (currentRotation + 4) % 360;
         cursorFollower.style.left = e.clientX - 18 + 'px';
         cursorFollower.style.top = e.clientY - 18 + 'px';
         cursorFollower.style.transform = `rotate(${currentRotation}deg)`;
 
-        // Add throttled drawing
+        if (!isDrawing) return;
+
         const currentTime = Date.now();
         if (currentTime - lastStampTime >= STAMP_DELAY) {
             const rect = canvas.getBoundingClientRect();
@@ -83,7 +85,6 @@ function setupCursorFollower() {
             
             drawSticker(x, y);
             currentImageIndex = (currentImageIndex + 1) % smileImages.length;
-            currentRotation = (currentRotation + 4) % 360;  // Increment rotation
             lastStampTime = currentTime;
         }
     });
@@ -92,17 +93,27 @@ function setupCursorFollower() {
 function setupSmileToggle() {
     const topToggle = document.getElementById('smileToggle');
     const bottomToggle = document.getElementById('bottomSmileToggle');
-    
+
     [topToggle, bottomToggle].forEach(toggle => {
         toggle.addEventListener('click', () => {
-            isDrawing = !isDrawing;
-            if (isDrawing) {
-                document.body.style.cursor = 'none';
-            } else {
+            if (smileMode) {
+                smileMode = false;
+                isDrawing = false;
                 document.body.style.cursor = 'default';
                 cursorFollower.style.display = 'none';
+            } else {
+                smileMode = true;
+                isDrawing = true;
+                document.body.style.cursor = 'none';
+                cursorFollower.style.display = 'block';
             }
         });
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!smileMode) return;
+        if (e.target === topToggle || e.target === bottomToggle) return;
+        isDrawing = !isDrawing;
     });
 }
 
