@@ -1,18 +1,15 @@
-function delay (URL) {
-    setTimeout( function() { window.location =  URL}, 700 );
+function delay(URL) {
+    setTimeout(function() { window.location = URL; }, 700);
 }
 
-$( document ).ready(function() {
-
-$('.exitClick').on("click",function(){
-  $("body").addClass("bodyExit");
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.exitClick').forEach(function(el) {
+        el.addEventListener('click', function() {
+            document.body.classList.add('bodyExit');
+        });
+    });
 });
 
-
-// $('.bodyExitClick').on("click",function(){
-//   $("body").addClass("bodyExit");
-//   console.log('bodyExiting');
-// });
-
-
+window.addEventListener('pageshow', function() {
+    document.body.classList.remove('bodyExit');
 });
